@@ -51,3 +51,29 @@ The repository was initialized locally. No remote GitHub repository has been con
 
 - **Working directory:** Files currently being edited.
 - **Staging area
+
+## 2026-11-11 — First GitHub deployment
+
+### Objective
+Publish the Research & Engineering Portfolio and verify its initial deployment.
+
+### Actions completed
+- Created the public GitHub repository `felipequi/research-engineering-portfolio`.
+- Configured the remote repository as `origin`.
+- Renamed the local default branch from `master` to `main`.
+- Reviewed and committed updates to the project context and GitHub profile link.
+- Pushed the local commit history using `git push -u origin main`.
+- Enabled GitHub Pages using the `main` branch and `/(root)` folder.
+
+### Verification
+- GitHub successfully received the repository files and commits.
+- The public website loaded with its HTML and CSS styling.
+- The Projects navigation link worked correctly.
+
+### Published website
+https://felipequi.github.io/research-engineering-portfolio/
+
+### Next steps
+- Continue testing website navigation and responsiveness.
+- Review project content and technical descriptions.
+- Maintain documentation as the portfolio evolves.

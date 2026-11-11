@@ -47,6 +47,13 @@ research-engineering-portfolio/
 - Existing local commits have NOT been pushed to GitHub.
 - The latest project-context.md file is not yet committed.
 
+- GitHub repository: https://github.com/felipequi/research-engineering-portfolio
+- Remote tracking branch: `origin/main`.
+- Initial push to GitHub completed on 2026-11-11.
+- GitHub Pages enabled from `main` and `/(root)`.
+- Published website: https://felipequi.github.io/research-engineering-portfolio/
+- Initial deployment verified: HTML, CSS and Projects navigation working.
+
 ## 5. Website Structure
 
 Current website sections:
