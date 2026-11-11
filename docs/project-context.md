@@ -38,7 +38,7 @@ research-engineering-portfolio/
 ## 4. Git Status
 
 - Local repository initialized with `git init`.
-- Current branch: `master`.
+- Current branch: `main`.
 - Initial commit: `a5a98c7 Initial portfolio structure`.
 - Second commit: `Add engineering development log`.
 - Remote name: `origin`.
