@@ -1,0 +1,740 @@
+
+.contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0;
+}
+
+.contribution-card {
+    min-width: 0;
+    padding: 28px 30px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+}
+
+.contribution-card h3 {
+    margin: 0 0 18px;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #0F2D59;
+}
+
+.contribution-card p {
+    margin: 0 0 14px;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #475569;
+}
+
+.contribution-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Preliminary Image Analysis */
+
+.analysis-block {
+    width: 100%;
+    margin-top: 32px;
+    padding: 32px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+}
+
+.analysis-block h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.analysis-block p {
+    margin-bottom: 12px;
+}
+
+.analysis-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Figures inside Preliminary Image Analysis */
+
+.analysis-figure {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto 36px;
+}
+
+.analysis-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.analysis-figure figcaption {
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #64748b;
+    text-align: left;
+}
+
+
+/* Image and intensity profiles side by side */
+
+.analysis-image-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    gap: 24px;
+    align-items: center ;
+    width: 100%;
+    max-width: 900px;
+    margin: 28px auto;
+}
+
+.analysis-image-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.analysis-image-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Exploratory ROI processing steps */
+
+.roi-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.roi-step {
+    padding: 20px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.roi-step span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #0f766e;
+}
+.roi-step img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 14px;
+    border-radius: 6px;
+}
+
+.roi-step p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   05 / Key Takeaways & Critical Assessment
+   ========================================== */
+
+.takeaways-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.takeaway-card {
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #dce4e8;
+    border-radius: 12px;
+}
+
+.takeaway-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.takeaway-card p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Main proof-of-concept outcome */
+
+.takeaways-outcome {
+    margin-top: 32px;
+    padding: 28px;
+    background: #edf7f5;
+    border-left: 4px solid #0f766e;
+    border-radius: 8px;
+}
+
+.takeaways-outcome h3 {
+    margin-top: 0;
+}
+
+/* Critical assessment */
+
+.takeaways-assessment {
+    margin-top: 32px;
+}
+
+.takeaways-assessment h3 {
+    margin-bottom: 14px;
+}
+
+/* Personal research takeaway */
+
+.takeaways-final {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #dce4e8;
+    font-style: italic;
+    color: #475569;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    .contribution-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-image-grid {
+        grid-template-columns: 1fr;
+    }
+    .roi-steps {
+    grid-template-columns: 1fr;
+    }   
+
+.takeaways-grid {
+    grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+/* Experimental setup — scientific figures */
+
+/* Experimental setup — figure proportions */
+
+.project-figure {
+    width: 100%;
+    max-width: 780px;
+    margin: 36px auto;
+}
+
+/* Figure 3 — taller optical schematic */
+
+.project-figure:has(
+    img[src*="fluorescence-schematic.png"]
+) {
+    max-width: 620px;
+}
+
+.project-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.project-figure figcaption {
+    max-width: 780px;
+    margin: 14px auto 0;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #64748b;
+    text-align: left;
+}
+
+.project-figure figcaption strong {
+    color: #334155;
+    font-weight: 600;
+}
+
+/* ==========================================
+   05 / DEVELOPMENT ROADMAP
+   ========================================== */
+
+.roadmap-figure {
+    margin: 2rem 0;
+}
+
+.roadmap-figure > h4 {
+    margin-bottom: 1.25rem;
+    font-size: 1.15rem;
+}
+
+.roadmap-grid {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.roadmap-row {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr) 24px minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+    background: #f2f7f6;
+    border: 1px solid #dce8e5;
+    border-radius: 10px;
+}
+
+.roadmap-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.roadmap-number {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.roadmap-header h5 {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.roadmap-step p {
+    margin: 0.35rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.step-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #64748b;
+}
+
+.roadmap-arrow {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #087f75;
+}
+
+.roadmap-figure figcaption {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #64748b;
+}
+
+/* Responsive layout */
+
+@media (max-width: 760px) {
+    .roadmap-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .roadmap-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .roadmap-arrow {
+        text-align: left;
+        transform: rotate(90deg);
+        transform-origin: center;
+        width: fit-content;
+    }
+}
+
+/* ==========================================
+   CEA-LITEN / PROPOSED IMPROVEMENTS
+   ========================================== */
+
+.improvement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin: 2rem 0;
+}
+
+.improvement-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid #dce8e5;
+    border-radius: 12px;
+    background: #f7faf9;
+}
+
+.improvement-number {
+    color: #087f75;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.improvement-card h4 {
+    margin: 0.65rem 0 0.5rem;
+    font-size: 1.08rem;
+}
+
+.improvement-card p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+.improvement-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    margin-top: auto;
+    padding: 1.2rem;
+    overflow: hidden;
+}
+
+.improvement-visual img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.improvement-visual svg {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+
+.improvement-caption {
+    display: block;
+    color: #64748b;
+    font-size: 0.76rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ==========================================
+   LONG-TERM RESEARCH VISION
+   ========================================== */
+
+.research-vision {
+    margin-top: 3rem;
+    padding: 2.5rem;
+    border: 1px solid #c9dfd9;
+    border-radius: 16px;
+    background: #edf6f3;
+    text-align: center;
+}
+
+.vision-eyebrow {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #087f75;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.research-vision h3 {
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    line-height: 1.25;
+}
+
+.vision-intro {
+    max-width: 720px;
+    margin: 0 auto 2rem;
+    line-height: 1.75;
+}
+
+.vision-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.vision-stage {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    padding: 1.4rem 0.8rem;
+    border: 1px solid #dce8e5;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.vision-stage-number {
+    color: #087f75;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.vision-stage strong {
+    font-size: 0.95rem;
+}
+
+.vision-stage > span:last-child {
+    color: #64748b;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.vision-flow-arrow {
+    flex-shrink: 0;
+    color: #087f75;
+    font-size: 1.5rem;
+}
+
+.vision-disclaimer {
+    margin: 1.5rem 0 0;
+    color: #64748b;
+    font-size: 0.78rem;
+}
+
+/* Responsive */
+
+@media (max-width: 760px) {
+    .improvement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research-vision {
+        padding: 1.5rem;
+    }
+
+    .vision-flow {
+        flex-direction: column;
+    }
+
+    .vision-stage {
+        width: 100%;
+        flex: none;
+    }
+
+    .vision-flow-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+/* Research vision — final goal */
+
+.vision-goal {
+    max-width: 620px;
+    margin: 1.8rem auto 0;
+    padding: 1.4rem 1.8rem;
+    background: #ffffff;
+    border: 1px solid #c9dfd9;
+    border-radius: 10px;
+}
+
+.vision-goal-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #087f75;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+}
+
+.vision-goal h4 {
+    margin: 0 0 0.6rem;
+    font-size: 1.2rem;
+}
+
+.vision-goal p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.research-vision .vision-intro + .vision-intro {
+    margin-top: -1rem;
+}
+
+@media (max-width: 760px) {
+    .vision-goal {
+        padding: 1.2rem;
+    }
+}
+
+/* ==========================================
+   01 — PROJECT OVERVIEW
+   ========================================== */
+
+/* Block 01 — Scientific problem */
+#overview .overview-intro {
+    max-width: 780px;
+    margin: 0 0 36px;
+}
+
+#overview .overview-intro h3,
+#overview .overview-content h3 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+#overview .overview-intro p,
+#overview .overview-content p {
+    margin: 0 0 16px;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #526677;
+}
+
+#overview .overview-intro p:last-child,
+#overview .overview-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Block 02 — Explanation and literature figure */
+#overview .overview-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+    margin: 0 0 44px;
+}
+
+#overview .overview-content {
+    max-width: 780px;
+}
+
+#overview .overview-figure {
+    width: 100%;
+    max-width: 760px;
+    min-width: 0;
+    margin: 0 auto;
+}
+
+#overview .overview-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#overview .overview-figure figcaption {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+#overview .overview-figure figcaption a {
+    color: #0f766e;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Block 03 — Research objective */
+#overview .overview-objective {
+    width: 100%;
+    padding: 30px 34px;
+    background: #f1f5f3;
+    border: 1px solid #dce6e1;
+    border-left: 3px solid #527b69;
+    border-radius: 10px;
+}
+
+#overview .overview-objective h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+#overview .overview-objective h4 {
+    margin: 0 0 20px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#overview .overview-objective > p {
+    max-width: 900px;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+#overview .overview-objective-list {
+    display: grid;
+    gap: 12px;
+    margin: 22px 0;
+}
+
+#overview .overview-objective-list p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+#overview .overview-objective-conclusion {
+    margin: 20px 0 0;
+}
+
+/* Responsive — Section 01 */
+@media (max-width: 800px) {
+    #overview .overview-intro {
+        margin-bottom: 30px;
+    }
+
+    #overview .overview-grid {
+        gap: 22px;
+        margin-bottom: 34px;
+    }
+
+    #overview .overview-figure {
+        max-width: 100%;
+    }
+
+    #overview .overview-objective {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #overview .overview-objective {
+        padding: 20px;
+    }
+
+    #overview .overview-intro p,
+    #overview .overview-content p,
+    #overview .overview-objective p,
+    #overview .overview-objective-list p {
+        font-size: 14px;
+    }
+}
