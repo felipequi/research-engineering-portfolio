@@ -117,7 +117,7 @@ a {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.55fr .75fr;
+    grid-template-columns: 1.35fr 1fr;
     gap: 70px;
     padding: 26px 0 80px
 }
@@ -409,29 +409,31 @@ h2 {
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px 80px;
-    margin-top: 50px
+    gap: 26px 64px;
+    margin-top: 34px;
 }
 
-.skill-grid>div {
+.skill-grid > div {
     border-top: 1px solid #cbd7dd;
-    padding-top: 20px
+    padding-top: 16px;
 }
 
 .skill-grid h3 {
-    font-size: 19px
+    font-size: 18px;
 }
 
 .skill-grid p {
     font-size: 14px;
-    line-height: 1.85;
-    color: #5c7080
+    line-height: 1.7;
+    color: #5c7080;
 }
 
+
 .disclaimer {
-    margin-top: 38px;
-    font-size: 12px;
-    color: #7c8b95
+    margin-top: 22px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #7c8b95;
 }
 
 .research-list {
@@ -608,3 +610,529 @@ footer {
         box-shadow: 8px 8px 0 #e9f0f0
     }
 }
+
+/* Academic Background */
+
+.academic-background {
+    margin-top: 70px;
+}
+
+.academic-heading {
+    margin-bottom: 30px;
+}
+
+.academic-heading h3 {
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: -1px;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.education-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--teal);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-country {
+    color: var(--teal);
+    font: 700 11px Manrope, Arial, sans-serif;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+}
+
+.education-card h4 {
+    font: 700 21px Manrope, Arial, sans-serif;
+    letter-spacing: -.5px;
+    line-height: 1.35;
+    margin: 0 0 12px;
+}
+
+.education-degree {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 22px;
+}
+
+.education-description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #5c7080;
+    margin-bottom: 28px;
+}
+
+.education-card a {
+    color: var(--teal);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.education-card a:hover {
+    text-decoration: underline;
+}
+.education-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 620px) {
+    .academic-background {
+        margin-top: 45px;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        padding: 25px;
+    }
+}
+/* Contact email */
+#contact a[href^="mailto:"] {
+  color: #70c7c7;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#contact a[href^="mailto:"]:hover {
+  text-decoration: underline;
+
+}
+#contact p:has(a[href^="mailto:"]) {
+  font-size: 20px;
+  line-height: 1.7;
+}
+/* Hero — Experimental photograph */
+.hero-photo {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    min-height: 360px;
+}
+
+.hero-experiment-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px 24px;
+    background: linear-gradient(
+        transparent,
+        rgba(11, 26, 43, 0.88)
+    );
+    color: #fff;
+    font: 600 11px Manrope, Arial, sans-serif;
+    letter-spacing: 1.2px;
+}
+/* Hero — Horizontal experimental photograph */
+.hero-photo {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    background: #e5e5e5;
+}
+
+.hero-experiment-image {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    object-position: center;
+}
+
+.project-link {
+    color: var(--teal);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Research project photographs */
+
+.project-visual {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    display: block;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-visual .visual-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 14px 10px;
+    color: #ffffff;
+    background: linear-gradient(
+        to top,
+        rgba(11, 26, 43, 0.78),
+        transparent
+    );
+    font-size: 9px;
+    letter-spacing: 0.6px;
+}
+
+/* ==========================================
+   PROJECT CARDS — INTERACTIVE FINISH
+========================================== */
+
+#projects .project {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+#projects .project:hover {
+    border-color: #b8d5d7;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(16, 43, 64, 0.06);
+}
+
+/* Clickable project images */
+
+#projects a.project-visual {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+#projects a.project-visual .project-image {
+    transition: transform 0.35s ease;
+}
+
+#projects a.project-visual:hover .project-image {
+    transform: scale(1.035);
+}
+
+/* Project content */
+
+#projects .project-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+#projects .project-title-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#projects .project-title-link:hover {
+    color: #137d80;
+}
+
+/* Keep tags above footer */
+
+#projects .tags {
+    margin-top: auto;
+}
+
+/* Unified footer */
+
+#projects .project-footer {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #e1e8eb;
+}
+
+#projects .project-footer .project-status {
+    margin: 0 0 10px;
+    padding: 0;
+    border: 0;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #73818d;
+}
+
+#projects .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+
+    color: #137d80;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    border: 0;
+}
+
+#projects .project-link span {
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+#projects .project-link:hover {
+    color: #0c5559;
+    text-decoration: none;
+}
+
+#projects .project-link:hover span {
+    transform: translate(2px, -2px);
+}
+
+/* Keyboard accessibility */
+
+#projects a:focus-visible {
+    outline: 2px solid #137d80;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    #projects .project,
+    #projects .project-image,
+    #projects .project-link span {
+        transition: none;
+    }
+
+    #projects .project:hover,
+    #projects a.project-visual:hover .project-image {
+        transform: none;
+    }
+}
+
+/* ==========================================
+   01 / RESEARCH ENVIRONMENT — CEA-LITEN
+========================================== */
+
+.research-environment {
+    margin-top: 80px;
+    padding: 36px 40px;
+    background: #ffffff;
+    border: 1px solid #e1e8ec;
+    border-left: 3px solid #2b8c88;
+    border-radius: 10px;
+}
+
+/* Header */
+
+.research-environment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.research-environment-heading {
+    min-width: 0;
+}
+
+.research-environment-eyebrow {
+    display: block;
+    margin-bottom: 12px;
+    color: #2b8c88;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.research-environment-heading h3 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+}
+
+.research-environment-heading h3 a {
+    color: #172c42;
+    text-decoration: none;
+}
+
+.research-environment-heading h3 a:hover {
+    color: #2b8c88;
+}
+
+.research-environment-heading p {
+    margin: 0;
+    color: #718294;
+    font-size: 13px;
+}
+
+/* Institutional logo */
+
+.research-environment-logo {
+    flex: 0 0 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research-environment-logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 72px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Description */
+
+.research-environment-body {
+    max-width: 780px;
+    margin-top: 30px;
+    padding-top: 26px;
+    border-top: 1px solid #e8edf0;
+}
+
+.research-environment-body p {
+    margin: 0 0 16px;
+    color: #526477;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.research-environment-body p:last-child {
+    margin-bottom: 0;
+}
+
+.research-environment-body strong {
+    color: #172c42;
+    font-weight: 600;
+}
+
+/* Supervisor */
+
+.research-environment-supervisor {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.research-environment-supervisor span {
+    color: #83909e;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+}
+
+.research-environment-supervisor a {
+    color: #172c42;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.research-environment-supervisor a:hover {
+    color: #2b8c88;
+}
+
+/* External links */
+
+.research-environment-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid #e8edf0;
+}
+
+.research-environment-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #e1e8ec;
+    border-radius: 6px;
+    color: #344e61;
+    background: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.2s ease,
+                color 0.2s ease,
+                background 0.2s ease;
+}
+
+.research-environment-links a:hover {
+    color: #237a76;
+    border-color: #b5d9d5;
+    background: #f5fbfa;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .research-environment {
+        margin-top: 56px;
+        padding: 26px 22px;
+    }
+
+    .research-environment-header {
+        gap: 18px;
+    }
+
+    .research-environment-heading h3 {
+        font-size: 23px;
+    }
+
+    .research-environment-logo {
+        flex-basis: 76px;
+    }
+
+    .research-environment-logo img {
+        max-height: 56px;
+    }
+
+    .research-environment-supervisor {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+    }
+
+    .research-environment-links a {
+        font-size: 11px;
+    }
+}
+
+

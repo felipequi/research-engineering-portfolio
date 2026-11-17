@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photoluminescence Thermometry | Juan Felipe Quintero</title>
+
+    <meta name="description"
+        content="Academic optical instrumentation project at IMT Mines Albi and Institut Clément Ader: photoluminescence lifetime thermometry, PMT signal acquisition and temperature calibration.">
+
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/ica-thermometry.css">
+
+</head>
+
+
+<body>
+
+    <header class="nav">
+        <div class="wrap navinner">
+
+            <a class="brand" href="../index.html">
+                JFQ<span class="branddot">.</span>
+            </a>
+
+            <nav aria-label="Primary navigation">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Expertise</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+
+        <!-- ==========================================
+     PROJECT HERO
+========================================== -->
+
+        <section class="hero wrap">
+
+            <div class="project-hero-grid">
+
+                <!-- Left Column: Project Information -->
+
+                <div class="project-hero-content">
+
+                    <div class="eyebrow">
+                        <h3>ACADEMIC PROJECT · OPTICAL INSTRUMENTATION</h3>
+                    </div>
+
+                    <h1>
+                        Photoluminescence Thermometry
+                    </h1>
+
+                    <p class="lead">
+                        Development and calibration of an optical test bench
+                        for temperature measurement using
+                        photoluminescence lifetime.
+                    </p>
+
+                    <p class="project-credits">
+                        IMT Mines Albi · Institut Clément Ader · 2025<br>
+                        Three-month academic project carried out with a fellow
+                        student under faculty supervision.
+                    </p>
+
+                </div>
+
+                <!-- Right Column: Luminescent Phosphors -->
+
+                <figure class="project-hero-figure">
+
+                    <img src="../assets/images/ica-thermometry/luminophores.png"
+                        alt="Three luminescent phosphor samples emitting blue, green and red light">
+
+                    <figcaption>
+                        Examples of luminescent phosphors.
+                        Photo: Henri-Claude Gras (2024).
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+     01 / PROJECT OVERVIEW
+========================================== -->
+
+        <!-- ==========================================
+     01 / PROJECT OVERVIEW
+========================================== -->
+
+        <section class="section light" id="overview">
+            <div class="wrap">
+
+                <div class="section-label">
+                    01 / PROJECT OVERVIEW
+                </div>
+
+                <h2>Measuring Temperature Through Light</h2>
+
+                <!-- Introduction + Application Image -->
+
+                <div class="overview-grid">
+
+                    <div class="overview-intro">
+
+                        <h3>Why Photoluminescence Thermometry?</h3>
+
+                        <p>
+                            Temperature is commonly measured using contact
+                            sensors, such as thermocouples, or non-contact
+                            techniques, such as infrared thermography.
+                            However, contact sensors may be difficult to
+                            integrate into certain experimental setups,
+                            while infrared measurements depend on
+                            knowledge of surface emissivity.
+                        </p>
+
+                        <p>
+                            Photoluminescence thermometry offers an
+                            alternative. When a phosphor is excited
+                            by light, it emits luminescence that gradually
+                            decays after excitation stops.
+                            The characteristic decay time, known as the
+                            luminescence lifetime, can depend on temperature.
+                        </p>
+
+                        <p>
+                            By measuring this lifetime rather than
+                            absolute emission intensity, temperature
+                            can be estimated using an experimentally
+                            established calibration curve.
+                        </p>
+
+                    </div>
+
+                    <figure class="overview-application">
+
+                        <img src="../assets/images/ica-thermometry/turbine-application.png"
+                            alt="Aircraft engine illustrating a potential aerospace application of optical thermometry"
+                            loading="lazy">
+
+                        <figcaption>
+                            Illustrative aerospace application.
+                            Not part of this experiment.
+
+                            <span class="image-credit">
+                                Image: IMT Mines Albi —
+                                <a href="https://www.imt-mines-albi.fr/en/expertise/aeronautics-and-space"
+                                    target="_blank" rel="noopener noreferrer">
+                                    Source
+                                </a>
+                            </span>
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+
+                <!-- ==========================================
+             RESEARCH ENVIRONMENT
+        ========================================== -->
+
+                <div class="overview-environment">
+
+                    <div class="environment-header">
+
+                        <!-- ICA Logo -->
+
+                        <a class="environment-logo"
+                            href="https://www.imt-mines-albi.fr/fr/centre-formation-recherche/institut-clement-ader-umr-cnrs-5312-site-albi"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Institut Clément Ader — official institutional page">
+                            <img src="../assets/images/ica-thermometry/ica-logo.png" alt="Institut Clément Ader logo"
+                                loading="lazy">
+                        </a>
+
+                        <!-- Laboratory Identity -->
+
+                        <div class="environment-identity">
+
+                            <span class="environment-label">
+                                RESEARCH ENVIRONMENT
+                            </span>
+
+                            <h3 class="environment-heading">
+                                <a href="https://www.imt-mines-albi.fr/fr/centre-formation-recherche/institut-clement-ader-umr-cnrs-5312-site-albi"
+                                    target="_blank" rel="noopener noreferrer">
+                                    Institut Clément Ader
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </h3>
+
+                            <p class="environment-affiliation">
+                                CNRS UMR 5312 · IMT Mines Albi
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Laboratory Description -->
+
+                    <p class="environment-description">
+                        This project was carried out at the
+                        <strong>Institut Clément Ader (ICA)</strong>,
+                        a joint research laboratory (UMR CNRS 5312)
+                        involving the CNRS and IMT Mines Albi,
+                        among other institutions. Its research
+                        includes materials, mechanical systems,
+                        instrumentation and measurement.
+                    </p>
+
+                    <!-- Academic Supervision -->
+
+                    <p class="environment-supervisor">
+                        Academic supervision:
+                        <a href="https://ica.cnrs.fr/author/copin/" target="_blank" rel="noopener noreferrer">
+                            Étienne Copin
+                        </a>
+                        · IMT Mines Albi
+                    </p>
+
+                    <!-- Institutional Video -->
+
+                    <a class="environment-video-link" href="https://www.youtube.com/watch?v=exJtGmNgCy4" target="_blank"
+                        rel="noopener noreferrer">
+                        <span aria-hidden="true">▶</span>
+                        Explore the research environment
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!-- ==========================================
+     02 / EXPERIMENTAL SETUP
+     ========================================== -->
+
+        <section class="section" id="experimental-setup">
+            <div class="wrap">
+
+                <div class="section-label">
+                    02 / EXPERIMENTAL SETUP
+                </div>
+
+                <h2>From Optical Excitation to Temperature Measurement</h2>
+
+                <p class="setup-intro">
+                    The experimental bench combined three elements:
+                    pulsed UV excitation, controlled sample heating,
+                    and time-resolved optical detection.
+                    The annotated photograph below shows the
+                    components and their arrangement.
+                </p>
+
+                <figure class="setup-figure">
+                    <img src="../assets/images/ica-thermometry/experimental-setup.png"
+                        alt="Annotated experimental thermometry setup showing the UV LED, bifurcated optical fiber, MFG phosphor, heating plate, thermocouple, optical filter and PMT."
+                        loading="lazy">
+
+                    <figcaption>
+                        Figure 1 — Annotated experimental setup
+                        for photoluminescence lifetime thermometry
+                        at Institut Clément Ader.
+                    </figcaption>
+                </figure>
+
+                <div class="setup-components">
+
+                    <div>
+                        <h3>01 / Optical Excitation</h3>
+                        <p>
+                            A Thorlabs M385FP1 UV LED (385 nm), controlled
+                            by a DC2200 pulse driver, provided the optical
+                            excitation. One branch of a bifurcated fiber
+                            probe guided the light toward the MFG phosphor.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>02 / Sample & Thermal Control</h3>
+                        <p>
+                            The MFG phosphor was placed on a regulated
+                            heating plate. A Type J thermocouple provided
+                            the reference temperature for the calibration
+                            measurements.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>03 / Detection & Acquisition</h3>
+
+                        <p>
+                            The second fiber branch collected the emitted
+                            luminescence, which passed through a 660 nm
+                            band-pass filter (10 nm bandwidth) before
+                            reaching the PMT. Signals were acquired at
+                            200 kHz for lifetime analysis in MATLAB.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+     03 / SIGNAL PROCESSIN
+========================================== -->
+
+        <!-- ==========================================
+     03 / SIGNAL PROCESSING
+========================================== -->
+
+        <section class="section light" id="signal-processing">
+            <div class="wrap">
+
+                <div class="section-label">
+                    03 / SIGNAL PROCESSING
+                </div>
+
+                <h2>From PMT Signals to Luminescence Lifetime</h2>
+
+                <p class="setup-intro">
+                    The photomultiplier recorded the luminescence
+                    response at 200 kHz. MATLAB was used to identify
+                    excitation cycles, extract the decay signals,
+                    and estimate the characteristic lifetime
+                    through mono-exponential fitting.
+                </p>
+
+                <!-- 01 / Signal Acquisition -->
+
+                <div class="processing-step">
+
+                    <div class="processing-text">
+                        <h3>01 / Signal Acquisition</h3>
+
+                        <p>
+                            The PMT signal was recorded at 200 kHz,
+                            corresponding to a sampling interval of
+                            5 microseconds. Each acquisition contained
+                            repeated excitation and luminescence
+                            decay cycles.
+                        </p>
+                    </div>
+
+                    <figure class="processing-figure">
+                        <img src="../assets/images/ica-thermometry/pmt-raw-signal.png"
+                            alt="Experimental PMT signal showing repeated luminescence cycles acquired at 200 kHz."
+                            loading="lazy">
+
+                        <figcaption>
+                            Figure 2 — Raw PMT acquisition showing
+                            repeated luminescence cycles.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <!-- 02 / Peak Detection -->
+
+                <div class="processing-step">
+
+                    <div class="processing-text">
+                        <h3>02 / Peak Detection</h3>
+
+                        <p>
+                            MATLAB's findpeaks function was used to
+                            identify successive signal peaks.
+                            A threshold based on the estimated baseline
+                            and noise level helped distinguish the peaks
+                            from background fluctuations.
+                        </p>
+
+                        <p>
+                            A minimum peak separation of 40 ms was
+                            applied to avoid detecting multiple peaks
+                            within the same excitation cycle.
+                        </p>
+                    </div>
+
+                    <figure class="processing-figure">
+                        <a href="../assets/images/ica-thermometry/peak-detection.png" target="_blank"
+                            rel="noopener noreferrer" aria-label="View peak detection graph in full size">
+                            <img src="../assets/images/ica-thermometry/peak-detection.png"
+                                alt="Experimental PMT signal with peaks detected by MATLAB, indicated by red circles."
+                                loading="lazy">
+                        </a>
+
+                        <figcaption>
+                            Figure 3 — Peak detection in MATLAB.
+                            Red markers identify detected signal maxima.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+
+
+
+                <!-- 03 / Decay Extraction -->
+
+                <div class="processing-step">
+
+                    <div class="processing-text">
+                        <h3>03 / Decay Extraction</h3>
+
+                        <p>
+                            After detecting the signal peaks, individual
+                            luminescence decays were isolated for analysis.
+                        </p>
+
+                        <p>
+                            The first 200 microseconds were excluded
+                            to reduce switching transients. A 15 ms
+                            fitting window was then selected to estimate
+                            the luminescence lifetime.
+                        </p>
+                    </div>
+
+                    <figure class="processing-figure">
+                        <a href="../assets/images/ica-thermometry/decay-extraction.png" target="_blank"
+                            rel="noopener noreferrer" aria-label="View experimental luminescence decay">
+                            <img src="../assets/images/ica-thermometry/decay-extraction.png"
+                                alt="Experimental PMT pulse showing its rise and subsequent luminescence decay."
+                                loading="lazy">
+                        </a>
+
+                        <figcaption>
+                            Figure 4 — Experimental PMT pulse showing
+                            the luminescence decay following its maximum.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <!-- 04 / Lifetime Estimation -->
+
+                <div class="processing-step">
+
+                    <div class="processing-text">
+                        <h3>04 / Lifetime Estimation</h3>
+
+                        <p>
+                            Individual luminescence decays were fitted
+                            in MATLAB using a mono-exponential model:
+                        </p>
+
+                        <p class="processing-equation">
+                            I(t) = I₀ exp(−t/τ) + B
+                        </p>
+
+                        <p>
+                            The fitted parameter τ represents the
+                            characteristic luminescence lifetime.
+                            Lifetimes from repeated decay cycles were
+                            used to obtain a representative value
+                            at each reference temperature.
+                        </p>
+                    </div>
+
+                    <figure class="processing-figure">
+                        <a href="../assets/images/ica-thermometry/lifetime-fit.png" target="_blank"
+                            rel="noopener noreferrer" aria-label="View experimental lifetime fit">
+                            <img src="../assets/images/ica-thermometry/lifetime-fit.png"
+                                alt="Experimental PMT decay data and mono-exponential fit plotted against time."
+                                loading="lazy">
+                        </a>
+
+                        <figcaption>
+                            Figure 5 — Experimental luminescence decay
+                            and mono-exponential fit used to estimate τ.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ==========================================
+     04 / RESULTS & CALIBRATION
+========================================== -->
+
+            <section class="section" id="results-calibration">
+                <div class="wrap">
+
+                    <div class="section-label">
+                        04 / RESULTS & CALIBRATION
+                    </div>
+
+                    <h2>Relating Luminescence Lifetime to Temperature</h2>
+
+                    <p class="setup-intro">
+                        We compared the measured luminescence lifetimes
+                        with the temperatures recorded by the thermocouple.
+                        This allowed us to build a calibration curve
+                        linking lifetime to temperature.
+                    </p>
+
+                    <!-- Key experimental results -->
+
+                    <div class="calibration-metrics">
+
+                        <div class="calibration-metric">
+                            <span class="metric-label">NEAR 25 °C</span>
+                            <strong>3.15 ms</strong>
+                            <span class="metric-description">
+                                Representative lifetime
+                            </span>
+                        </div>
+
+                        <div class="calibration-metric">
+                            <span class="metric-label">AT 190 °C</span>
+                            <strong>1.84 ms</strong>
+                            <span class="metric-description">
+                                Measured lifetime
+                            </span>
+                        </div>
+
+                        <div class="calibration-metric">
+                            <span class="metric-label">QUADRATIC FIT</span>
+                            <strong>0.9891</strong>
+                            <span class="metric-description">
+                                Coefficient of determination (R²)
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <!-- Figure 6: Lifetime calibration -->
+
+                    <div class="calibration-grid">
+
+                        <figure class="calibration-figure">
+                            <a href="../assets/images/ica-thermometry/lifetime-calibration-quadratic.png"
+                                target="_blank" rel="noopener noreferrer" aria-label="View lifetime calibration curve">
+                                <img src="../assets/images/ica-thermometry/lifetime-calibration-quadratic.png"
+                                    alt="Mean luminescence lifetime versus temperature with quadratic calibration fit."
+                                    loading="lazy">
+                            </a>
+
+                            <figcaption>
+                                Figure 6 — Mean lifetime from 25 individually
+                                fitted decays per temperature. Quadratic fit
+                                performed in Origin (R² = 0.9891).
+                            </figcaption>
+                        </figure>
+
+                        <div class="calibration-content">
+
+                            <h3>How Lifetime Changes with Temperature</h3>
+
+                            <p>
+                                The measured lifetime decreased from about
+                                <strong>3.15 ms near 25 °C</strong> to
+                                <strong>1.84 ms at 190 °C</strong>.
+                            </p>
+
+                            <p>
+                                We compared linear, quadratic and cubic
+                                models to describe this relationship.
+                                We chose the quadratic model because it
+                                provided a good fit (R² = 0.9891)
+                                while keeping the calibration
+                                relatively simple.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Figure 7: Absolute thermal sensitivity -->
+
+                    <div class="calibration-grid sensitivity-grid">
+
+                        <figure class="calibration-figure">
+                            <a href="../assets/images/ica-thermometry/sensibility.png" target="_blank"
+                                rel="noopener noreferrer" aria-label="View absolute thermal sensitivity curve">
+                                <img src="../assets/images/ica-thermometry/sensibility.png"
+                                    alt="Calculated absolute thermal sensitivity decreasing from approximately 8.9 to 6.1 microseconds per degree Celsius."
+                                    loading="lazy">
+                            </a>
+
+                            <figcaption>
+                                Figure 7 — Absolute thermal sensitivity
+                                calculated from the derivative of the
+                                quadratic calibration model (20–190 °C).
+                            </figcaption>
+                        </figure>
+
+                        <div class="calibration-content">
+
+                            <h3>What Does Sensitivity Tell Us?</h3>
+
+                            <p>
+                                We calculated the absolute sensitivity
+                                from the quadratic calibration model.
+                            </p>
+
+                            <div class="sensitivity-equation">
+                                S<sub>A</sub>(T) = |dτ/dT| = |B + 2CT|
+                            </div>
+                            <p>
+                                It decreases from approximately
+                                <strong>8.9 to 6.1 µs/°C</strong>
+                                between 20 °C and 190 °C.
+                                This means that, at higher temperatures,
+                                the lifetime changes less for each
+                                additional degree.
+                            </p>
+
+                            <p>
+                                For the same uncertainty in lifetime
+                                measurement, this can lead to greater
+                                uncertainty in the estimated temperature.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Scientific limitations -->
+
+                    <div class="calibration-limitations">
+
+                        <h3>What We Could Not Yet Establish</h3>
+
+                        <p>
+                            The calibration shows a clear relationship
+                            between lifetime and temperature. However,
+                            we did not independently validate the
+                            temperature estimates or complete a full
+                            uncertainty analysis. We therefore cannot
+                            claim a specific measurement accuracy.
+                        </p>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ==========================================
+     05 / WHAT I LEARNED
+========================================== -->
+
+            <section class="section light" id="what-i-learned">
+                <div class="wrap">
+
+                    <div class="section-label">
+                        05 / WHAT I LEARNED
+                    </div>
+
+                    <h2>What I Learned from This Project</h2>
+
+                    <div class="learning-list">
+
+                        <!-- Learning 01 -->
+
+                        <div class="learning-item">
+                            <span class="learning-number">01</span>
+
+                            <div class="learning-content">
+                                <h3>Choosing the Right Components</h3>
+
+                                <p>
+                                    I learned why the choice of detector and
+                                    optical filter matters. We needed a fast
+                                    detector to measure the luminescence decay
+                                    and a filter to separate the emitted light
+                                    from unwanted signals.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Learning 02 -->
+
+                        <div class="learning-item">
+                            <span class="learning-number">02</span>
+
+                            <div class="learning-content">
+                                <h3>Working with Real Signals</h3>
+
+                                <p>
+                                    I learned that the signal recorded by the
+                                    PMT cannot simply be fitted as it is.
+                                    We had to detect the pulses, exclude the
+                                    initial transient and fit individual decays
+                                    before calculating the mean lifetime.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Learning 03 -->
+
+                        <div class="learning-item">
+                            <span class="learning-number">03</span>
+
+                            <div class="learning-content">
+                                <h3>Understanding What a Good Fit Means</h3>
+
+                                <p>
+                                    I learned that the model with the highest
+                                    R² is not always the best choice.
+                                    We also had to consider how the model
+                                    behaved when calculating sensitivity,
+                                    and what the calibration could actually
+                                    tell us about temperature measurement.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+    </main>
+
+</body>
+
+
+</html>
