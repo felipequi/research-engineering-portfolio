@@ -1,8 +1,8 @@
 # Research & Engineering Portfolio — Project Context
 
 **Author:** Juan Felipe Quintero  
-**Last updated:** 2026-11-14  
-**Project status:** Active development — website deployed and first R&D case study published  
+**Last updated:** 2026-11-18  
+**Project status:** Active development — portfolio deployed, academic background pages integrated and first R&D case study published  
 **GitHub account:** `felipequi`  
 **Repository:** https://github.com/felipequi/research-engineering-portfolio  
 **Published website:** https://felipequi.github.io/research-engineering-portfolio/
@@ -21,20 +21,23 @@ Build and maintain a professional research and engineering portfolio showcasing 
 
 The portfolio is intended for R&D recruiters, engineering teams, research laboratories and potential PhD supervisors.
 
-The primary goal is to demonstrate engineering capabilities through documented experimental projects, with emphasis on technical contributions, methodology and evidence-based results.
+The primary goal is to demonstrate engineering capabilities through documented experimental projects, emphasizing personal technical contributions, experimental methodology and evidence-based results.
 
 ## 2. Professional Positioning
 
-**Target profile:** R&D Engineer in Advanced Instrumentation, Sensor Technologies & Applied Photonics for High-Tech Systems.
+**Target profile:** R&D Engineer specialized in Advanced Instrumentation, Sensor Technologies & Applied Photonics for High-Tech Systems.
 
 Priority technical domains:
 
 1. Optical instrumentation, metrology and experimental test benches.
 2. Photonics, optics and spectroscopy.
 3. Sensors, detectors and scientific imaging.
-4. Scientific instrumentation and advanced characterization.
+4. Materials and device characterization.
+5. Computational imaging and intelligent sensing, when directly connected to physical measurement systems.
 
-The portfolio should communicate both scientific understanding and practical engineering capabilities.
+The portfolio should communicate scientific understanding, experimental problem-solving and practical engineering capabilities.
+
+**Positioning principle:** Demonstrate what was designed, measured, characterized, analyzed or improved, rather than presenting only academic credentials or general technical interests.
 
 ## 3. Technical Environment
 
@@ -53,7 +56,11 @@ The portfolio should communicate both scientific understanding and practical eng
 
 The website is a static project without a required backend or JavaScript framework.
 
+Avoid introducing unnecessary dependencies or build tools.
+
 ## 4. Repository Structure
+
+The working architecture includes:
 
 ```text
 research-engineering-portfolio/
@@ -62,39 +69,85 @@ research-engineering-portfolio/
 ├── assets/
 │   ├── css/
 │   │   ├── style.css
-│   │   └── cea-liten.css
+│   │   ├── cea-liten.css
+│   │   ├── imt-mines-albi.css
+│   │   └── utp.css
 │   └── images/
+│       ├── home/
+│       ├── education/
 │       └── cea-liten/
-├── docs/
-│   ├── ai-instructions.md
-│   ├── development-log.md
-│   └── project-context.md
-└── projects/
-    └── cea-liten.html
+├── education/
+│   ├── imt-mines-albi.html
+│   └── utp.html
+├── projects/
+│   ├── cea-liten.html
+│   ├── ica-thermometry.html
+│   └── institut-corrosion.html
+└── docs/
+    ├── academic/
+    ├── ai-instructions.md
+    ├── development-log.md
+    └── project-context.md
 ```
+
+The structure reflects the files and directories discussed during development. The actual repository tree remains the authoritative reference.
 
 ### File responsibilities
 
 **`index.html`**
-- Main portfolio page.
-- Professional introduction and overview of research experience.
-- Project cards and navigation.
+
+- Main portfolio homepage.
+- Professional introduction and technical positioning.
+- Research project overview and navigation.
+- Academic Background section with dedicated institutional links.
 - Entry point to individual project case studies.
 
 **`assets/css/style.css`**
-- Global design system.
-- Shared typography, colors, layout and responsive styles.
+
+- Global visual design system.
+- Typography, colors, navigation and shared components.
+- Homepage layout, academic cards and responsive behavior.
 
 **`assets/css/cea-liten.css`**
+
 - Styles specific to the CEA-Liten case study.
 
-**`assets/images/cea-liten/`**
-- Scientific figures, schematics and visual assets for the CEA-Liten project.
+**`assets/css/imt-mines-albi.css`**
 
-**`projects/cea-liten.html`**
-- Dedicated technical case study presenting the CEA-Liten research experience.
+- Styles specific to the IMT Mines Albi academic page.
+- Academic sections, figures, institutional branding and spacing.
+
+**`assets/css/utp.css`**
+
+- Styles specific to the Universidad Tecnológica de Pereira academic page.
+
+**`assets/images/home/`**
+
+- Homepage photographs and institutional images.
+
+**`assets/images/education/`**
+
+- Academic figures and institutional visual resources.
+
+**`assets/images/cea-liten/`**
+
+- Scientific figures, experimental illustrations and case-study assets.
+
+**`education/`**
+
+- Dedicated institutional academic background pages.
+
+**`projects/`**
+
+- Individual research and engineering case studies.
+- The existence of a local HTML page does not by itself establish publication or content-completion status.
+
+**`docs/academic/`**
+
+- Supporting academic documents and references.
 
 **`docs/`**
+
 - Current project context.
 - Chronological engineering development log.
 - AI-assisted development instructions.
@@ -103,51 +156,109 @@ research-engineering-portfolio/
 
 **Repository:** `felipequi/research-engineering-portfolio`  
 **Visibility:** Public  
-**Default branch:** `main`  
+**Production branch:** `main`  
 **Remote:** `origin`  
-**Deployment:** GitHub Pages from `main` and `/(root)`
+**Hosting:** GitHub Pages  
+**Deployment configuration:** `main` branch, `/(root)` folder, as previously configured.
 
-### Confirmed milestones
+### Confirmed development milestones
 
 - Local Git repository initialized on 2026-11-11.
 - Initial commit created: `a5a98c7`.
-- GitHub repository created and connected.
-- Initial push to GitHub completed.
-- GitHub Pages configured and website deployed.
-- CEA-Liten case study published.
-- Homepage updated with a direct case-study link.
-- Remote homepage change synchronized locally using `git pull origin main`.
+- GitHub repository connected and first website deployed.
+- CEA-Liten research case study published.
+- Homepage connected to the CEA-Liten case study.
+- Dedicated academic pages developed for UTP and IMT Mines Albi.
+- Homepage Academic Background navigation expanded.
+- Homepage and academic page spacing refined.
+- Academic image presentation improved.
+- A GitHub Pages stylesheet caching discrepancy was resolved.
 
 ### Relevant commits
 
 - `c55fd7b` — Add CEA-Liten research case study.
 - `3329001` — Update homepage navigation to the case study.
+- `3a1666f` — Refine academic pages and improve portfolio layout.
 
-**Important:** The local repository status must be checked using `git status` before making changes. Documentation edits may not yet have been committed.
+These commits are recorded from the development history. The latest remote commit and working-tree status should be checked directly before new operations.
 
-## 6. Website Structure
+### Deployment considerations
 
-The main portfolio includes the following sections:
+A successful local commit does not imply that changes have been uploaded.
 
-- About
-- Projects
-- Expertise
-- Research
-- Contact
+A successful `git push` does not independently guarantee that GitHub Pages has completed deployment.
 
-The website uses a navy/teal visual identity.
+Verify synchronization and deployment separately.
 
-### Published pages
+The homepage stylesheet uses a version parameter to help prevent stale browser caching:
 
-**Homepage:**  
-https://felipequi.github.io/research-engineering-portfolio/
+```html
+<link rel="stylesheet" href="assets/css/style.css?v=3">
+```
 
-**CEA-Liten case study:**  
-https://felipequi.github.io/research-engineering-portfolio/projects/cea-liten.html
+Increment the version parameter when necessary after significant stylesheet changes.
 
-The homepage provides a direct link to the detailed CEA-Liten case study.
+## 6. Website Structure and Visual Identity
 
-## 7. Scientific Content
+The main portfolio includes:
+
+- About.
+- Academic Background.
+- Projects.
+- Expertise.
+- Research.
+- Contact.
+
+### Design identity
+
+The portfolio follows a minimal scientific and editorial visual direction.
+
+Principal characteristics:
+
+- Navy text and teal accents.
+- White backgrounds and restrained borders.
+- DM Sans and Manrope typography.
+- Clear technical hierarchy.
+- Compact but readable section spacing.
+- Consistent scientific figures and image proportions.
+- Responsive desktop and mobile layouts.
+
+### Academic Background
+
+The homepage contains two institutional cards:
+
+**Universidad Tecnológica de Pereira**
+
+- Engineering Physics education.
+- Dedicated page: `education/utp.html`.
+
+**IMT Mines Albi**
+
+- French engineering double-degree program.
+- Advanced Materials and Processes option.
+- Instrumentation and Advanced Data Analysis pathway.
+- Dedicated page: `education/imt-mines-albi.html`.
+
+Each academic card provides internal navigation through its image, institutional title and dedicated detail link.
+
+External links to official institutional resources are preserved separately.
+
+### Academic page design
+
+Academic pages use the shared global design system with independent stylesheets.
+
+Design decisions include:
+
+- Compact section spacing.
+- Consistent heading hierarchy.
+- Readable academic descriptions.
+- Controlled figure dimensions.
+- Responsive layouts.
+- Institutional imagery and academic resources where appropriate.
+
+Avoid duplicating academic content already clearly represented by a figure.
+
+## 7. Research and Engineering Content
 
 ### 7.1 CEA-Liten — Optical Fluorescence Imaging
 
@@ -163,12 +274,12 @@ Key technical elements:
 - UV excitation at approximately 365 nm.
 - sCMOS camera-based imaging.
 - Optical experimental setup and associated instrumentation.
-- Scientific image processing and exploratory intensity analysis using Python.
+- Python-based image processing and exploratory intensity analysis.
 - Complementary spectroscopic investigations.
 
-The case study should emphasize experimental engineering work, measurement methodology and appropriately qualified results.
+The case study should emphasize experimental engineering, measurement methodology, technical contributions and appropriately qualified findings.
 
-**Scientific limitation:** Exploratory fluorescence observations must not be presented as a validated quantitative measurement of deposited lithium mass without supporting calibration and validation.
+**Scientific limitation:** Exploratory fluorescence observations must not be presented as validated quantitative measurements of deposited lithium mass without supporting calibration and validation.
 
 ### 7.2 Photoluminescence Thermometry
 
@@ -180,26 +291,67 @@ Relevant experience includes:
 - Temperature calibration.
 - Signal acquisition and analysis.
 
-**Portfolio status:** Relevant experience identified; no separate published case-study page confirmed.
+**Portfolio status:** A corresponding HTML page has been identified in the working architecture; its publication and completion status require verification.
 
 ### 7.3 Materials Characterization
 
-Relevant experience includes microscopy, materials characterization, experimental measurements and scientific data analysis.
+Relevant experience includes:
 
-**Portfolio status:** Relevant background; no separate published case-study page confirmed.
+- Materials characterization.
+- Microscopy and experimental measurements.
+- Scientific data analysis.
+- Thin-film materials and related experimental techniques.
 
-## 8. Scientific and Publication Constraints
+**Portfolio status:** Additional project pages have been identified in the working architecture; their publication and completion status require verification.
+
+## 8. Academic Background
+
+### Universidad Tecnológica de Pereira
+
+**Program:** Ingeniería Física  
+**Country:** Colombia
+
+Relevant academic foundations:
+
+- Solid-state physics.
+- Electromagnetism.
+- Optics.
+- Experimental methods.
+- Scientific computing.
+- Materials characterization.
+
+The academic page should distinguish coursework, research participation and completed academic qualifications.
+
+### IMT Mines Albi
+
+**Program:** Diplôme d’Ingénieur Généraliste — Grade de Master  
+**Country:** France  
+**Academic period:** 2024–2026
+
+Academic focus:
+
+- Advanced Materials and Processes for Future Transport.
+- Instrumentation and Advanced Data Analysis.
+- Experimental measurement methods.
+- Imaging and characterization.
+- Advanced scientific data analysis.
+
+The dedicated page includes the engineering pathway, selected coursework, specialization information, academic mentorship and supporting resources.
+
+Institutional academic figures and documents must be accurately attributed and used with appropriate permissions.
+
+## 9. Scientific and Publication Constraints
 
 - Publish only public or explicitly authorized research material.
 - Avoid disclosing confidential industrial data or proprietary methods.
 - Do not invent measurements, results, performance metrics or calibration data.
-- Clearly distinguish observations, interpretations and validated conclusions.
+- Distinguish observations, interpretations and validated conclusions.
 - Preserve the original scientific meaning of figures and experimental results.
 - Attribute external scientific figures and references appropriately.
 - Obtain necessary publication permissions for materials originating from research institutions.
-- Prioritize scientific accuracy over visual presentation or marketing language.
+- Prioritize scientific accuracy over visual presentation or promotional language.
 
-## 9. Engineering and Design Principles
+## 10. Engineering and Design Principles
 
 - Maintain a clean, professional, research-oriented design.
 - Prioritize readable content and scientific figures.
@@ -208,78 +360,82 @@ Relevant experience includes microscopy, materials characterization, experimenta
 - Maintain responsive layouts for desktop and mobile.
 - Avoid unnecessary frameworks and dependencies.
 - Reuse global CSS for shared components.
-- Keep project-specific styles in dedicated files.
-- Ensure that relative links work under the GitHub Pages repository path.
+- Keep page-specific styles in dedicated files.
+- Verify relative links under the GitHub Pages repository path.
+- Prefer targeted CSS corrections over accumulating conflicting overrides.
+- Verify production appearance after deployment.
 
-## 10. Development Workflow
+## 11. Development Workflow
 
 Standard local workflow:
 
 1. Open the repository in Visual Studio Code.
 2. Check the working directory using `git status`.
-3. Confirm the latest remote changes are available before editing.
+3. Review remote synchronization when necessary.
 4. Make focused changes to the appropriate files.
 5. Preview the website locally using Live Server.
 6. Verify affected content, links and layout.
 7. Review changes using `git diff` and `git status`.
-8. Stage intended files with `git add`.
+8. Stage only intended files.
 9. Create a descriptive English commit.
 10. Push commits using `git push origin main`.
-11. Verify the public deployment.
+11. Verify GitHub Pages deployment and browser rendering.
 
-When the remote repository has been modified directly through GitHub, synchronize the local branch before continuing.
+If remote changes were made directly through GitHub, inspect the local working tree before pulling.
 
-Avoid destructive commands unless their consequences have been clearly explained.
+Avoid destructive commands unless their consequences have been clearly explained and approved.
 
-## 11. Working Preferences
+## 12. Working Preferences
 
 - Explain technical concepts in Spanish.
-- Keep portfolio website content and technical documentation in English.
+- Keep website content and technical documentation in English.
 - Give precise, actionable instructions.
 - Work one step at a time.
 - Wait for `L`, `Listo` or `Continuar` before advancing.
-- Clearly distinguish VS Code file edits from PowerShell terminal commands.
+- Distinguish VS Code file edits from PowerShell terminal commands.
 - Identify the exact file and location to modify.
-- Explain what each Git command does.
+- Explain the purpose of Git commands.
 - Do not assume commands succeeded without confirmation.
 - Prefer simple, maintainable solutions over unnecessary complexity.
 - Preserve existing content and functionality unless a change is explicitly requested.
 
-## 12. Current Workflow State
+## 13. Current Workflow State
 
-**Last completed development milestone:** Publication and integration of the CEA-Liten case study.
+**Last development milestone discussed:** Academic Background integration and homepage visual refinement.
 
-**Current task:** Updating project documentation to reflect the deployed website and current repository structure.
+**Current task:** Update project documentation to reflect the expanded portfolio architecture and recent development decisions.
 
-### Documentation progress
+### Documentation status
 
-- `development-log.md` — Updated locally; commit pending.
-- `project-context.md` — Update prepared; local save pending.
-- `ai-instructions.md` — Review and update pending.
+- `development-log.md` — Updated content prepared; repository save and commit status not verified.
+- `project-context.md` — Updated content prepared in this revision.
+- `ai-instructions.md` — Revision required to reflect the expanded architecture.
+- `README.md` — Review required for consistency with the current website.
 
 ### Next operational step
 
-Finish reviewing and updating the three documentation files, then create a single documentation commit and push it to GitHub.
+Save and review the updated documentation, confirm the repository's actual state and create a documentation commit when approved.
 
-## 13. Future Priorities
+## 14. Future Priorities
 
 ### Short term
 
-- Review website content from an R&D recruiter's perspective.
+- Verify all academic pages and internal navigation on GitHub Pages.
 - Check desktop and mobile responsiveness.
-- Verify all project images, captions and links.
+- Verify images, captions and academic resource links.
+- Review the website from an R&D recruiter's perspective.
 - Improve scientific figure readability.
 - Refine the presentation of personal engineering contributions.
 
 ### Medium term
 
-- Develop additional technical case studies where appropriate.
-- Improve project discoverability and metadata.
+- Develop and refine additional technical case studies.
+- Improve accessibility, metadata and discoverability.
 - Integrate relevant GitHub code repositories when suitable for public release.
 - Maintain a consistent technical visual identity.
 - Prepare the portfolio for professional applications and research opportunities.
 
-## 14. Documentation Maintenance
+## 15. Documentation Maintenance
 
 This document describes the current state of the project.
 
@@ -287,7 +443,7 @@ Update it after significant architectural, technical or workflow changes.
 
 Do not use it as a detailed chronological record; that responsibility belongs to `development-log.md`.
 
-The three documentation files are maintained manually and do not update automatically when website source files change.
+The documentation files are maintained manually and do not update automatically when website source files change.
 
 ---
 
