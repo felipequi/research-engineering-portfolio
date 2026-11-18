@@ -1,0 +1,462 @@
+/* Education subpages — supplements the existing portfolio stylesheet. */
+body.education-page {
+    color: var(--ink);
+    background: #fff;
+}
+
+.education-page .edu-wrap {
+    max-width: 1000px;
+}
+
+.edu-back {
+    display: inline-block;
+    margin: 38px 0 44px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--teal)
+}
+
+.edu-back:hover,
+.text-link:hover {
+    text-decoration: underline
+}
+
+.edu-hero {
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--line)
+}
+
+.edu-hero .eyebrow {
+    font-size: 11px;
+    letter-spacing: .13em;
+    margin-bottom: 20px
+}
+
+.edu-hero h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    letter-spacing: -.055em;
+    line-height: 1.14;
+    margin-bottom: 20px;
+    max-width: 920px
+}
+
+.edu-degree {
+    font: 700 clamp(17px, 2.1vw, 22px)/1.5 Manrope, Arial, sans-serif;
+    color: #1a3044;
+    margin-bottom: 19px
+}
+
+.edu-degree span {
+    font-weight: 500;
+    color: #647485
+}
+
+.edu-intro {
+    font-size: 16px;
+    line-height: 1.85;
+    max-width: 790px;
+    color: #536b7b;
+    margin-bottom: 28px
+}
+
+.edu-facts {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr .75fr;
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid #e7edf0
+}
+
+.edu-facts>div {
+    min-width: 0
+}
+
+.edu-facts span,
+.continuation span,
+.edu-next span {
+    display: block;
+    font: 700 10px Manrope, Arial;
+    letter-spacing: .13em;
+    color: var(--teal);
+    margin-bottom: 9px
+}
+
+.edu-facts strong {
+    font: 600 13px/1.65 'DM Sans', Arial, sans-serif;
+    color: #2e485b
+}
+
+.edu-section {
+    padding: 55px 0 57px;
+    border-bottom: 1px solid var(--line)
+}
+
+.edu-section .section-label {
+    margin-bottom: 20px
+}
+
+.edu-section h2 {
+    font-size: clamp(26px, 3vw, 35px);
+    line-height: 1.3;
+    letter-spacing: -.035em;
+    margin-bottom: 18px
+}
+
+.edu-copy {
+    max-width: 820px;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #526677;
+    margin-bottom: 20px
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 28px
+}
+
+.timeline>div {
+    border: 1px solid #dbe2e7;
+    border-top: 3px solid var(--teal);
+    padding: 19px 18px;
+    min-width: 0
+}
+
+.timeline span {
+    display: block;
+    color: var(--teal);
+    font: 700 11px Manrope;
+    margin-bottom: 11px
+}
+
+.timeline strong {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #1b3549
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 30px
+}
+
+.course {
+    border-top: 1px solid #dbe2e7;
+    padding: 19px 0 22px
+}
+
+.course h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    letter-spacing: -.02em
+}
+
+.course p {
+    font-size: 13px;
+    line-height: 1.75;
+    color: #627485;
+    margin: 0
+}
+
+.source-figure {
+    margin: 28px 0 24px;
+    max-width: 840px
+}
+
+.source-figure a {
+    display: block;
+    border: 1px solid #dbe2e7;
+    background: #fff;
+    padding: 10px
+}
+
+.source-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain
+}
+
+.source-figure figcaption {
+    font-size: 11px;
+    color: #7c8995;
+    line-height: 1.6;
+    margin-top: 9px
+}
+
+.module-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0
+}
+
+.module-summary span {
+    font-size: 11px;
+    line-height: 1.4;
+    background: #edf3f3;
+    color: #3a666b;
+    padding: 9px 12px;
+    border-radius: 3px
+}
+
+.text-link {
+    font-weight: 700;
+    color: var(--teal)
+}
+
+.mentor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px
+}
+
+.mentor>div {
+    flex: 1;
+    min-width: 0
+}
+
+.resource-link {
+    display: inline-flex;
+    color: var(--teal);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.6
+}
+
+.mentor>.resource-link {
+    max-width: 220px
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 22px
+}
+
+.resource-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+    padding: 23px;
+    min-height: 180px;
+    transition: border-color .2s ease
+}
+
+.resource-card:hover {
+    border-color: var(--teal)
+}
+
+.resource-card>span {
+    font: 700 10px Manrope;
+    color: var(--teal);
+    letter-spacing: .1em;
+    margin-bottom: 13px
+}
+
+.resource-card strong {
+    font: 700 17px/1.4 Manrope;
+    color: var(--ink);
+    margin-bottom: 9px
+}
+
+.resource-card small {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #627485;
+    margin-bottom: 15px
+}
+
+.resource-card b {
+    margin-top: auto;
+    font-size: 12px;
+    color: var(--teal)
+}
+
+.edu-footnote {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #7b8b98;
+    margin: 22px 0 0
+}
+
+.edu-footnote a {
+    color: var(--teal);
+    font-weight: 700
+}
+
+.edu-next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 35px 0 70px
+}
+
+.edu-next span {
+    margin: 0
+}
+
+.edu-next a {
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 14px
+}
+
+.edu-heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.edu-heading-row>div {
+    min-width: 0
+}
+
+.edu-logo {
+    display: block;
+    width: 145px;
+    max-width: 25%;
+    height: auto;
+    object-fit: contain
+}
+
+.continuation {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin: 10px 0 24px
+}
+
+.continuation>div {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid var(--line)
+}
+
+.continuation strong {
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.continuation-arrow {
+    font-size: 24px;
+    color: var(--teal)
+}
+
+@media(max-width:760px) {
+    .edu-facts {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .timeline {
+        grid-template-columns: 1fr
+    }
+
+    .edu-section {
+        padding: 40px 0
+    }
+
+    .mentor {
+        display: block
+    }
+
+    .mentor>.resource-link {
+        max-width: none
+    }
+
+    .edu-heading-row {
+        align-items: flex-start
+    }
+
+    .edu-logo {
+        width: 90px
+    }
+
+    .resource-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:540px) {
+    .edu-back {
+        margin: 26px 0 34px
+    }
+
+    .edu-facts,
+    .course-grid {
+        grid-template-columns: 1fr
+    }
+
+    .edu-facts {
+        gap: 16px
+    }
+
+    .edu-heading-row {
+        gap: 10px
+    }
+
+    .edu-logo {
+        width: 75px
+    }
+
+    .edu-next {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .continuation {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .continuation-arrow {
+        align-self: center;
+        transform: rotate(90deg)
+    }
+
+    .edu-hero h1 {
+        font-size: 36px
+    }
+}
+
+/* Homepage link additions */
+.education-card .education-detail-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--teal);
+    font-weight: 700
+}
+
+/* UTP — compact section spacing */
+
+.education-page .edu-section {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.education-page .edu-section+.edu-section {
+    margin-top: 0;
+}
+
+.education-page .edu-section .section-label {
+    margin-bottom: 14px;
+}
+
+.education-page .edu-section h2 {
+    margin-bottom: 18px;
+}
+
+@media (max-width: 620px) {
+    .education-page .edu-section {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+}

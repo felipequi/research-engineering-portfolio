@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
-
-
 :root {
 
     --ink: #16283a;
@@ -17,21 +15,15 @@
     --line: #dbe2e7
 }
 
-
-
 * {
 
     box-sizing: border-box
 }
 
-
-
 html {
 
     scroll-behavior: smooth
 }
-
-
 
 body {
 
@@ -44,16 +36,12 @@ body {
     background: #fff
 }
 
-
-
 a {
 
     color: inherit;
 
     text-decoration: none
 }
-
-
 
 .wrap {
 
@@ -62,16 +50,12 @@ a {
     margin: auto
 }
 
-
-
 .skip {
 
     position: absolute;
 
     left: -9999px
 }
-
-
 
 .skip:focus {
 
@@ -86,8 +70,6 @@ a {
     padding: 12px
 }
 
-
-
 .nav {
 
     background: #fff;
@@ -101,8 +83,6 @@ a {
     z-index: 10
 }
 
-
-
 .navinner {
 
     height: 76px;
@@ -114,8 +94,6 @@ a {
     gap: 36px
 }
 
-
-
 .brand {
 
     font: 800 28px Manrope, Arial;
@@ -123,14 +101,10 @@ a {
     letter-spacing: -2px
 }
 
-
-
 .branddot {
 
     color: #178e94
 }
-
-
 
 .nav nav {
 
@@ -141,8 +115,6 @@ a {
     margin-left: auto
 }
 
-
-
 .nav nav a {
 
     font-size: 13px;
@@ -152,14 +124,10 @@ a {
     font-weight: 600
 }
 
-
-
 .nav nav a:hover {
 
     color: var(--teal)
 }
-
-
 
 .navcta {
 
@@ -174,14 +142,10 @@ a {
     font-weight: 700
 }
 
-
-
 .hero {
 
     padding-top: 86px
 }
-
-
 
 .eyebrow,
 
@@ -193,8 +157,6 @@ a {
 
     color: var(--teal)
 }
-
-
 
 .signal {
 
@@ -211,8 +173,6 @@ a {
     margin-right: 10px
 }
 
-
-
 .hero-grid {
 
     display: grid;
@@ -223,8 +183,6 @@ a {
 
     padding: 26px 0 80px
 }
-
-
 
 h1,
 
@@ -237,8 +195,6 @@ p {
     margin-top: 0
 }
 
-
-
 h1,
 
 h2,
@@ -247,8 +203,6 @@ h3 {
 
     font-family: Manrope, Arial, sans-serif
 }
-
-
 
 h1 {
 
@@ -263,8 +217,6 @@ h1 {
     margin-bottom: 32px
 }
 
-
-
 h1 em,
 
 h2 em {
@@ -273,8 +225,6 @@ h2 em {
 
     color: var(--teal)
 }
-
-
 
 .lead {
 
@@ -287,14 +237,10 @@ h2 em {
     color: #586a79
 }
 
-
-
 .lead strong {
 
     color: var(--ink)
 }
-
-
 
 .actions {
 
@@ -306,8 +252,6 @@ h2 em {
 
     margin-top: 32px
 }
-
-
 
 .primary,
 
@@ -330,8 +274,6 @@ h2 em {
     justify-content: space-between
 }
 
-
-
 .primary {
 
     background: #116d75;
@@ -339,14 +281,10 @@ h2 em {
     color: #fff
 }
 
-
-
 .primary:hover {
 
     background: #0a515a
 }
-
-
 
 .secondary {
 
@@ -354,8 +292,6 @@ h2 em {
 
     color: #244256
 }
-
-
 
 .hero-panel {
 
@@ -372,8 +308,6 @@ h2 em {
     box-shadow: 16px 16px 0 #e9f0f0
 }
 
-
-
 .panel-top,
 
 .panel-bottom {
@@ -388,8 +322,6 @@ h2 em {
 
     justify-content: space-between
 }
-
-
 
 .scope {
 
@@ -408,8 +340,6 @@ h2 em {
     line-height: 1.55
 }
 
-
-
 .scope-n {
 
     font: 700 12px Manrope;
@@ -417,16 +347,12 @@ h2 em {
     color: #62b6b2
 }
 
-
-
 .panel-bottom {
 
     margin-top: 25px;
 
     font-size: 9px
 }
-
-
 
 .hero-foot {
 
@@ -445,21 +371,15 @@ h2 em {
     color: #8796a0
 }
 
-
-
 .section {
 
     padding: 112px 0
 }
 
-
-
 .light {
 
     background: var(--paper)
 }
-
-
 
 .split {
 
@@ -470,14 +390,10 @@ h2 em {
     gap: 85px
 }
 
-
-
 .section-label {
 
     margin-bottom: 28px
 }
-
-
 
 h2 {
 
@@ -492,8 +408,6 @@ h2 {
     margin-bottom: 30px
 }
 
-
-
 .bodycopy p {
 
     font-size: 16px;
@@ -504,8 +418,6 @@ h2 {
 
     margin-bottom: 22px
 }
-
-
 
 .small-note {
 
@@ -520,8 +432,6 @@ h2 {
     margin-top: 30px
 }
 
-
-
 .section-head {
 
     display: flex;
@@ -535,14 +445,10 @@ h2 {
     margin-bottom: 40px
 }
 
-
-
 .section-head h2 {
 
     margin: 0
 }
-
-
 
 .section-head p {
 
@@ -555,8 +461,6 @@ h2 {
     color: #637787
 }
 
-
-
 .project-grid {
 
     display: grid;
@@ -565,8 +469,6 @@ h2 {
 
     gap: 22px
 }
-
-
 
 .project {
 
@@ -578,8 +480,6 @@ h2 {
 
     flex-direction: column
 }
-
-
 
 .project-visual {
 
@@ -598,8 +498,6 @@ h2 {
     justify-content: center
 }
 
-
-
 .project-visual svg {
 
     width: 100%;
@@ -611,21 +509,15 @@ h2 {
     z-index: 1
 }
 
-
-
 .visual-two {
 
     background: #1c3548
 }
 
-
-
 .visual-three {
 
     background: #132f3d
 }
-
-
 
 .visual-caption {
 
@@ -644,8 +536,6 @@ h2 {
     color: #a9c2cf
 }
 
-
-
 .diagram-glow {
 
     position: absolute;
@@ -654,8 +544,6 @@ h2 {
 
     background: radial-gradient(circle at 50% 50%, #24596955, transparent 65%)
 }
-
-
 
 .project-info {
 
@@ -668,8 +556,6 @@ h2 {
     flex: 1
 }
 
-
-
 .project-meta {
 
     font: 700 10px Manrope;
@@ -680,8 +566,6 @@ h2 {
 
     margin-bottom: 16px
 }
-
-
 
 .project h3 {
 
@@ -694,8 +578,6 @@ h2 {
     margin-bottom: 15px
 }
 
-
-
 .project p {
 
     font-size: 13px;
@@ -704,8 +586,6 @@ h2 {
 
     color: #5f7280
 }
-
-
 
 .tags {
 
@@ -720,8 +600,6 @@ h2 {
     padding-top: 12px
 }
 
-
-
 .tags span {
 
     font-size: 10px;
@@ -734,8 +612,6 @@ h2 {
 
     border-radius: 3px
 }
-
-
 
 .project-status {
 
@@ -750,8 +626,6 @@ h2 {
     padding-top: 14px
 }
 
-
-
 .skill-grid {
 
     display: grid;
@@ -764,8 +638,6 @@ h2 {
 
 }
 
-
-
 .skill-grid>div {
 
     border-top: 1px solid #cbd7dd;
@@ -774,15 +646,11 @@ h2 {
 
 }
 
-
-
 .skill-grid h3 {
 
     font-size: 18px;
 
 }
-
-
 
 .skill-grid p {
 
@@ -793,10 +661,6 @@ h2 {
     color: #5c7080;
 
 }
-
-
-
-
 
 .disclaimer {
 
@@ -810,14 +674,10 @@ h2 {
 
 }
 
-
-
 .research-list {
 
     margin: 30px 0 40px
 }
-
-
 
 .research-list div {
 
@@ -830,8 +690,6 @@ h2 {
     font-size: 14px
 }
 
-
-
 .research-list span {
 
     color: var(--teal);
@@ -841,8 +699,6 @@ h2 {
     font: 700 11px Manrope
 }
 
-
-
 .minihead {
 
     font-size: 16px;
@@ -850,16 +706,12 @@ h2 {
     margin-bottom: 10px
 }
 
-
-
 .muted {
 
     font-size: 13px !important;
 
     color: #81919b !important
 }
-
-
 
 .contact {
 
@@ -870,14 +722,10 @@ h2 {
     color: white
 }
 
-
-
 .contact .section-label {
 
     color: #72d2c5
 }
-
-
 
 .contact h2 {
 
@@ -886,14 +734,10 @@ h2 {
     margin-bottom: 20px
 }
 
-
-
 .contact h2 em {
 
     color: #76c9c5
 }
-
-
 
 .contact p {
 
@@ -902,8 +746,6 @@ h2 {
     font-size: 16px
 }
 
-
-
 .lightbtn {
 
     background: #74c6bf;
@@ -911,14 +753,10 @@ h2 {
     color: #0c2931
 }
 
-
-
 .lightbtn:hover {
 
     background: #a3e0d8
 }
-
-
 
 .lightoutline {
 
@@ -926,8 +764,6 @@ h2 {
 
     color: white
 }
-
-
 
 .contact-note {
 
@@ -938,16 +774,12 @@ h2 {
     color: #8ca9b8 !important
 }
 
-
-
 footer {
 
     background: #091927;
 
     color: #9bb1be
 }
-
-
 
 .footerinner {
 
@@ -962,11 +794,7 @@ footer {
     font-size: 11px
 }
 
-
-
 @media(max-width:900px) {
-
-
 
     .hero-grid,
 
@@ -977,28 +805,20 @@ footer {
         gap: 35px
     }
 
-
-
     .hero-panel {
 
         max-width: 520px
     }
-
-
 
     .project-grid {
 
         grid-template-columns: 1fr 1fr
     }
 
-
-
     .nav nav {
 
         gap: 12px
     }
-
-
 
     .navcta {
 
@@ -1007,8 +827,6 @@ footer {
 
 }
 
-
-
 @media(max-width:620px) {
 
     .wrap {
@@ -1016,28 +834,20 @@ footer {
         width: calc(100% - 36px)
     }
 
-
-
     .navinner {
 
         height: 66px
     }
-
-
 
     .nav nav {
 
         gap: 12px
     }
 
-
-
     .nav nav a {
 
         font-size: 11px
     }
-
-
 
     .nav nav a:nth-child(3),
 
@@ -1046,21 +856,15 @@ footer {
         display: none
     }
 
-
-
     .hero {
 
         padding-top: 55px
     }
 
-
-
     .hero-grid {
 
         padding-bottom: 55px
     }
-
-
 
     h1 {
 
@@ -1069,28 +873,20 @@ footer {
         letter-spacing: -2.4px
     }
 
-
-
     .section {
 
         padding: 70px 0
     }
-
-
 
     .section-head {
 
         display: block
     }
 
-
-
     .section-head p {
 
         margin-top: 18px
     }
-
-
 
     .project-grid,
 
@@ -1099,8 +895,6 @@ footer {
         grid-template-columns: 1fr
     }
 
-
-
     .hero-foot {
 
         font-size: 8px;
@@ -1108,14 +902,10 @@ footer {
         gap: 10px
     }
 
-
-
     .footerinner {
 
         flex-wrap: wrap
     }
-
-
 
     .hero-panel {
 
@@ -1124,11 +914,7 @@ footer {
 
 }
 
-
-
 /* Academic Background */
-
-
 
 .academic-background {
 
@@ -1136,15 +922,11 @@ footer {
 
 }
 
-
-
 .academic-heading {
 
     margin-bottom: 30px;
 
 }
-
-
 
 .academic-heading h3 {
 
@@ -1158,8 +940,6 @@ footer {
 
 }
 
-
-
 .education-grid {
 
     display: grid;
@@ -1169,8 +949,6 @@ footer {
     gap: 22px;
 
 }
-
-
 
 .education-card {
 
@@ -1188,8 +966,6 @@ footer {
 
 }
 
-
-
 .education-country {
 
     color: var(--teal);
@@ -1201,8 +977,6 @@ footer {
     margin-bottom: 20px;
 
 }
-
-
 
 .education-card h4 {
 
@@ -1216,8 +990,6 @@ footer {
 
 }
 
-
-
 .education-degree {
 
     font-size: 14px;
@@ -1229,8 +1001,6 @@ footer {
     margin-bottom: 22px;
 
 }
-
-
 
 .education-description {
 
@@ -1244,8 +1014,6 @@ footer {
 
 }
 
-
-
 .education-card a {
 
     color: var(--teal);
@@ -1257,8 +1025,6 @@ footer {
     margin-top: auto;
 
 }
-
-
 
 .education-card a:hover {
 
@@ -1280,8 +1046,6 @@ footer {
 
 }
 
-
-
 @media (max-width: 620px) {
 
     .academic-background {
@@ -1290,15 +1054,11 @@ footer {
 
     }
 
-
-
     .education-grid {
 
         grid-template-columns: 1fr;
 
     }
-
-
 
     .education-card {
 
@@ -1320,13 +1080,9 @@ footer {
 
 }
 
-
-
 #contact a[href^="mailto:"]:hover {
 
     text-decoration: underline;
-
-
 
 }
 
@@ -1352,8 +1108,6 @@ footer {
 
 }
 
-
-
 .hero-experiment-image {
 
     display: block;
@@ -1369,8 +1123,6 @@ footer {
     object-position: center;
 
 }
-
-
 
 .hero-photo-caption {
 
@@ -1410,8 +1162,6 @@ footer {
 
 }
 
-
-
 .hero-experiment-image {
 
     width: 100%;
@@ -1426,8 +1176,6 @@ footer {
 
 }
 
-
-
 .project-link {
 
     color: var(--teal);
@@ -1438,21 +1186,13 @@ footer {
 
 }
 
-
-
 .project-link:hover {
 
     text-decoration: underline;
 
 }
 
-
-
-
-
 /* Research project photographs */
-
-
 
 .project-visual {
 
@@ -1465,8 +1205,6 @@ footer {
     display: block;
 
 }
-
-
 
 .project-image {
 
@@ -1481,8 +1219,6 @@ footer {
     object-position: center;
 
 }
-
-
 
 .project-visual .visual-caption {
 
@@ -1510,15 +1246,11 @@ footer {
 
 }
 
-
-
 /* ==========================================
 
-   PROJECT CARDS — INTERACTIVE FINISH
+   PROJECT CARDS — INTERACTIVE FINISH
 
-========================================== */
-
-
+\========================================== */
 
 #projects .project {
 
@@ -1538,8 +1270,6 @@ footer {
 
 }
 
-
-
 #projects .project:hover {
 
     border-color: #b8d5d7;
@@ -1550,11 +1280,7 @@ footer {
 
 }
 
-
-
 /* Clickable project images */
-
-
 
 #projects a.project-visual {
 
@@ -1568,15 +1294,11 @@ footer {
 
 }
 
-
-
 #projects a.project-visual .project-image {
 
     transition: transform 0.35s ease;
 
 }
-
-
 
 #projects a.project-visual:hover .project-image {
 
@@ -1584,11 +1306,7 @@ footer {
 
 }
 
-
-
 /* Project content */
-
-
 
 #projects .project-info {
 
@@ -1602,8 +1320,6 @@ footer {
 
 }
 
-
-
 #projects .project-title-link {
 
     color: inherit;
@@ -1614,19 +1330,13 @@ footer {
 
 }
 
-
-
 #projects .project-title-link:hover {
 
     color: #137d80;
 
 }
 
-
-
 /* Keep tags above footer */
-
-
 
 #projects .tags {
 
@@ -1634,11 +1344,7 @@ footer {
 
 }
 
-
-
 /* Unified footer */
-
-
 
 #projects .project-footer {
 
@@ -1649,8 +1355,6 @@ footer {
     border-top: 1px solid #e1e8eb;
 
 }
-
-
 
 #projects .project-footer .project-status {
 
@@ -1668,8 +1372,6 @@ footer {
 
 }
 
-
-
 #projects .project-link {
 
     display: inline-flex;
@@ -1678,13 +1380,9 @@ footer {
 
     gap: 8px;
 
-
-
     margin: 0;
 
     padding: 0;
-
-
 
     color: #137d80;
 
@@ -1700,8 +1398,6 @@ footer {
 
 }
 
-
-
 #projects .project-link span {
 
     font-size: 16px;
@@ -1709,8 +1405,6 @@ footer {
     transition: transform 0.2s ease;
 
 }
-
-
 
 #projects .project-link:hover {
 
@@ -1720,19 +1414,13 @@ footer {
 
 }
 
-
-
 #projects .project-link:hover span {
 
     transform: translate(2px, -2px);
 
 }
 
-
-
 /* Keyboard accessibility */
-
-
 
 #projects a:focus-visible {
 
@@ -1744,11 +1432,7 @@ footer {
 
 }
 
-
-
 /* Reduced motion */
-
-
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -1762,8 +1446,6 @@ footer {
 
     }
 
-
-
     #projects .project:hover,
 
     #projects a.project-visual:hover .project-image {
@@ -1774,15 +1456,11 @@ footer {
 
 }
 
-
-
 /* ==========================================
 
-   01 / RESEARCH ENVIRONMENT — CEA-LITEN
+   01 / RESEARCH ENVIRONMENT — CEA-LITEN
 
-========================================== */
-
-
+\========================================== */
 
 .research-environment {
 
@@ -1800,11 +1478,7 @@ footer {
 
 }
 
-
-
 /* Header */
-
-
 
 .research-environment-header {
 
@@ -1818,15 +1492,11 @@ footer {
 
 }
 
-
-
 .research-environment-heading {
 
     min-width: 0;
 
 }
-
-
 
 .research-environment-eyebrow {
 
@@ -1844,8 +1514,6 @@ footer {
 
 }
 
-
-
 .research-environment-heading h3 {
 
     margin: 0 0 8px;
@@ -1858,8 +1526,6 @@ footer {
 
 }
 
-
-
 .research-environment-heading h3 a {
 
     color: #172c42;
@@ -1868,15 +1534,11 @@ footer {
 
 }
 
-
-
 .research-environment-heading h3 a:hover {
 
     color: #2b8c88;
 
 }
-
-
 
 .research-environment-heading p {
 
@@ -1888,11 +1550,7 @@ footer {
 
 }
 
-
-
 /* Institutional logo */
-
-
 
 .research-environment-logo {
 
@@ -1905,8 +1563,6 @@ footer {
     justify-content: center;
 
 }
-
-
 
 .research-environment-logo img {
 
@@ -1924,11 +1580,7 @@ footer {
 
 }
 
-
-
 /* Description */
-
-
 
 .research-environment-body {
 
@@ -1942,8 +1594,6 @@ footer {
 
 }
 
-
-
 .research-environment-body p {
 
     margin: 0 0 16px;
@@ -1956,15 +1606,11 @@ footer {
 
 }
 
-
-
 .research-environment-body p:last-child {
 
     margin-bottom: 0;
 
 }
-
-
 
 .research-environment-body strong {
 
@@ -1974,11 +1620,7 @@ footer {
 
 }
 
-
-
 /* Supervisor */
-
-
 
 .research-environment-supervisor {
 
@@ -1992,8 +1634,6 @@ footer {
 
 }
 
-
-
 .research-environment-supervisor span {
 
     color: #83909e;
@@ -2005,8 +1645,6 @@ footer {
     letter-spacing: 0.09em;
 
 }
-
-
 
 .research-environment-supervisor a {
 
@@ -2020,19 +1658,13 @@ footer {
 
 }
 
-
-
 .research-environment-supervisor a:hover {
 
     color: #2b8c88;
 
 }
 
-
-
 /* External links */
-
-
 
 .research-environment-links {
 
@@ -2049,8 +1681,6 @@ footer {
     border-top: 1px solid #e8edf0;
 
 }
-
-
 
 .research-environment-links a {
 
@@ -2082,8 +1712,6 @@ footer {
 
 }
 
-
-
 .research-environment-links a:hover {
 
     color: #237a76;
@@ -2094,11 +1722,7 @@ footer {
 
 }
 
-
-
 /* Responsive */
-
-
 
 @media (max-width: 700px) {
 
@@ -2110,15 +1734,11 @@ footer {
 
     }
 
-
-
     .research-environment-header {
 
         gap: 18px;
 
     }
-
-
 
     .research-environment-heading h3 {
 
@@ -2126,23 +1746,17 @@ footer {
 
     }
 
-
-
     .research-environment-logo {
 
         flex-basis: 76px;
 
     }
 
-
-
     .research-environment-logo img {
 
         max-height: 56px;
 
     }
-
-
 
     .research-environment-supervisor {
 
@@ -2154,8 +1768,6 @@ footer {
 
     }
 
-
-
     .research-environment-links a {
 
         font-size: 11px;
@@ -2164,434 +1776,1054 @@ footer {
 
 }
 
-
-
-
-
-
 /* =========================================================
+
    HOME REFINEMENT — editorial proportions and spacing
+
    Maintains the existing navy/teal visual identity.
+
    ========================================================= */
+
 :root {
+
     --space-1: 8px;
+
     --space-2: 16px;
+
     --space-3: 24px;
+
     --space-4: 32px;
+
     --space-5: 48px;
+
     --space-6: 72px;
+
     --space-7: 96px;
+
     --radius-card: 6px;
+
 }
 
 body {
+
     -webkit-font-smoothing: antialiased;
+
 }
 
 .wrap {
+
     width: min(1160px, calc(100% - 80px));
+
 }
 
 .navinner {
+
     min-height: 76px;
+
     height: auto;
+
     gap: 24px;
+
 }
 
 .nav nav {
+
     gap: clamp(12px, 1.7vw, 24px);
+
     align-items: center;
+
 }
 
 .nav nav a {
+
     white-space: nowrap;
+
 }
 
 .hero {
+
     padding-top: clamp(64px, 7vw, 96px);
+
 }
 
 .hero-grid {
+
     grid-template-columns: minmax(0, 1.16fr) minmax(0, 1fr);
+
     align-items: center;
+
     gap: clamp(32px, 5vw, 64px);
+
     padding: 28px 0 clamp(64px, 7vw, 88px);
+
 }
 
 .hero-grid>* {
+
     min-width: 0;
+
 }
 
 h1 {
+
     font-size: clamp(43px, 4.75vw, 66px);
+
     line-height: 1.13;
+
     letter-spacing: -0.052em;
+
     margin-bottom: 26px;
+
     overflow-wrap: normal;
+
 }
 
 .lead {
+
     font-size: 16px;
+
     line-height: 1.8;
+
     max-width: 610px;
+
 }
 
 .actions {
+
     margin-top: 28px;
+
     gap: 12px;
+
 }
 
 .primary,
+
 .secondary {
+
     min-height: 50px;
+
     padding: 14px 20px;
+
     gap: 16px;
+
 }
 
 .hero-photo {
+
     aspect-ratio: 1.22 / 1;
+
     min-height: 0;
+
     align-self: center;
+
     box-shadow: 12px 12px 0 #e9f0f0;
+
 }
 
 .hero-experiment-image {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: contain;
+
 }
 
 .hero-photo-caption {
+
     padding: 26px 20px 16px;
+
     line-height: 1.55;
+
     letter-spacing: .06em;
+
 }
 
 .hero-foot {
+
     gap: 24px;
+
     line-height: 1.6;
+
 }
 
 .section {
+
     padding: clamp(72px, 8vw, 104px) 0;
+
 }
 
 .split {
+
     grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+
     gap: clamp(40px, 7vw, 88px);
+
 }
 
 h2 {
+
     font-size: clamp(34px, 3.75vw, 50px);
+
     line-height: 1.2;
+
     letter-spacing: -.045em;
+
     margin-bottom: 24px;
+
 }
 
 .section-label {
+
     margin-bottom: 22px;
+
 }
 
 .bodycopy p {
+
     font-size: 15px;
+
     line-height: 1.85;
+
     margin-bottom: 18px;
+
 }
 
 .academic-background {
+
     margin-top: 64px;
+
 }
 
 .academic-heading {
+
     margin-bottom: 26px;
+
 }
 
 .education-grid {
+
     gap: 24px;
+
 }
 
 .education-card {
+
     padding: 28px;
+
     border-radius: var(--radius-card);
+
 }
 
 .education-image {
+
     height: 190px;
+
     margin-bottom: 22px;
+
     border-radius: 3px;
+
 }
 
 .education-card h4 {
+
     font-size: 20px;
+
     line-height: 1.38;
+
 }
 
 .education-description {
+
     line-height: 1.75;
+
 }
 
 .section-head {
+
     gap: 44px;
+
     align-items: end;
+
     margin-bottom: 34px;
+
 }
 
 .section-head p {
+
     margin-bottom: 3px;
+
 }
 
 .project-grid {
+
     gap: 20px;
+
     align-items: stretch;
+
 }
 
 #projects .project {
+
     border-radius: var(--radius-card);
+
     overflow: hidden;
+
 }
 
 .project-visual {
+
     height: auto;
+
     aspect-ratio: 1.53 / 1;
+
 }
 
 .project-image {
+
     object-fit: cover;
+
 }
 
 .project-info {
+
     padding: 25px 24px 23px;
+
 }
 
 .project-meta {
+
     font-size: 10px;
+
     line-height: 1.65;
+
     margin-bottom: 14px;
+
 }
 
 .project h3 {
+
     font-size: 20px;
+
     line-height: 1.36;
+
     margin-bottom: 13px;
+
 }
 
 .project p {
+
     font-size: 13px;
+
     line-height: 1.78;
+
 }
 
 .tags {
+
     gap: 6px;
+
     padding-top: 14px;
+
 }
 
 .tags span {
+
     line-height: 1.35;
+
 }
 
 #projects .project-footer {
+
     margin-top: 18px;
+
     min-height: 43px;
+
 }
 
 .skill-grid {
+
     gap: 30px 56px;
+
     margin-top: 32px;
+
 }
 
 .skill-grid>div {
+
     padding-top: 19px;
+
 }
 
 .skill-grid h3 {
+
     margin-bottom: 10px;
+
 }
 
 .skill-grid p {
+
     margin-bottom: 0;
+
 }
 
 .skill-grid>.disclaimer {
+
     grid-column: 1 / -1;
+
     margin-top: 2px;
+
     max-width: 740px;
+
 }
 
 .research-list {
+
     margin: 24px 0 36px;
+
 }
 
 .research-list div {
+
     line-height: 1.6;
+
 }
 
 .contact {
+
     padding: clamp(72px, 8vw, 100px) 0;
+
 }
 
 .contact h2 {
+
     max-width: 960px;
+
     font-size: clamp(36px, 4.4vw, 58px);
+
 }
 
 .contact p {
+
     line-height: 1.75;
+
 }
 
 .footerinner {
+
     align-items: center;
+
     line-height: 1.6;
+
 }
 
 :where(a, button):focus-visible {
+
     outline: 2px solid var(--teal);
+
     outline-offset: 4px;
+
 }
 
 @media (max-width: 1080px) {
+
     .navinner {
+
         gap: 18px;
+
     }
 
     .nav nav {
+
         gap: 14px;
+
     }
 
     .nav nav a {
+
         font-size: 12px;
+
     }
 
     .navcta {
+
         display: none;
+
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .wrap {
+
+        width: min(100% - 48px, 720px);
+
+    }
+
+    .hero-grid,
+
+    .split {
+
+        grid-template-columns: 1fr;
+
+        gap: 34px;
+
+    }
+
+    .hero-photo {
+
+        width: min(100%, 650px);
+
+        aspect-ratio: 1.5 / 1;
+
+    }
+
+    .project-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+    .section-head {
+
+        align-items: start;
+
+    }
+
+    .navinner {
+
+        flex-wrap: wrap;
+
+        padding: 15px 0;
+
+    }
+
+    .nav nav {
+
+        flex-wrap: wrap;
+
+        row-gap: 10px;
+
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .wrap {
+
+        width: calc(100% - 36px);
+
+    }
+
+    .navinner {
+
+        min-height: 64px;
+
+    }
+
+    .brand {
+
+        font-size: 25px;
+
+    }
+
+    .nav nav {
+
+        gap: 10px 14px;
+
+    }
+
+    .hero {
+
+        padding-top: 52px;
+
+    }
+
+    .hero-grid {
+
+        padding-bottom: 54px;
+
+        gap: 30px;
+
+    }
+
+    h1 {
+
+        font-size: clamp(38px, 9vw, 46px);
+
+        letter-spacing: -.045em;
+
+    }
+
+    .lead {
+
+        font-size: 15px;
+
+        line-height: 1.8;
+
+    }
+
+    .hero-photo {
+
+        aspect-ratio: 4 / 3;
+
+        box-shadow: 8px 8px 0 #e9f0f0;
+
+    }
+
+    .hero-foot {
+
+        flex-wrap: wrap;
+
+        font-size: 9px;
+
+    }
+
+    .section {
+
+        padding: 68px 0;
+
+    }
+
+    .academic-background {
+
+        margin-top: 48px;
+
+    }
+
+    .education-grid,
+
+    .project-grid,
+
+    .skill-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .education-card {
+
+        padding: 22px;
+
+    }
+
+    .education-image {
+
+        height: 180px;
+
+    }
+
+    .project-visual {
+
+        aspect-ratio: 1.55 / 1;
+
+    }
+
+    .section-head {
+
+        display: block;
+
+    }
+
+    .section-head p {
+
+        margin-top: 14px;
+
+    }
+
+    .contact {
+
+        padding: 72px 0;
+
+    }
+
+    .footerinner {
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+
+    }
+
+}
+
+/* =========================================================
+   INDEX — EDITORIAL ALIGNMENT (integrated overrides)
+   ========================================================= */
+/* HOME — editorial refinement. Load after assets/css/style.css. */
+body.home-editorial {
+    --home-ink: #193248;
+    --home-copy: #4b6070;
+    --home-muted: #687d8b;
+    --home-accent: #187b78;
+    --home-line: #dce6e9;
+}
+
+body.home-editorial main .wrap {
+    max-width: 1080px;
+}
+
+body.home-editorial main .section {
+    padding-block: clamp(42px, 5.5vw, 66px);
+}
+
+body.home-editorial main .section h2 {
+    font-size: clamp(30px, 3.2vw, 38px);
+    line-height: 1.18;
+    letter-spacing: -.035em;
+}
+
+body.home-editorial main .section-label {
+    font-size: 11px;
+    letter-spacing: .1em;
+    color: var(--home-accent);
+}
+
+body.home-editorial main :is(.hero-grid, .split, .education-grid, .project-grid, .skill-grid)>* {
+    min-width: 0;
+}
+
+body.home-editorial main p {
+    line-height: 1.68;
+    overflow-wrap: break-word;
+}
+
+/* Hero retains its deliberate two-column composition. */
+body.home-editorial main .hero {
+    padding-block: clamp(48px, 5vw, 66px);
+}
+
+body.home-editorial main .hero-grid {
+    gap: clamp(26px, 4vw, 46px);
+    align-items: center;
+}
+
+body.home-editorial main .hero h1 {
+    line-height: 1.13;
+}
+
+body.home-editorial main .hero .lead {
+    max-width: 100%;
+    font-size: clamp(15px, 1.55vw, 17px);
+    line-height: 1.7;
+}
+
+body.home-editorial main .hero-photo {
+    min-width: 0;
+}
+
+body.home-editorial main .hero-experiment-image {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+body.home-editorial main .hero-photo-caption {
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+/* About and research: balanced text column with natural justification. */
+body.home-editorial #about .split,
+body.home-editorial #research .split {
+    grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+    gap: clamp(28px, 5vw, 60px);
+}
+
+body.home-editorial #about .bodycopy,
+body.home-editorial #research .bodycopy {
+    width: 100%;
+    max-width: none;
+}
+
+body.home-editorial #about .bodycopy p,
+body.home-editorial #research .bodycopy p {
+    max-width: none;
+}
+
+/* Academic cards: matching image windows without distortion. */
+body.home-editorial .education-grid {
+    align-items: stretch;
+    gap: 20px;
+}
+
+body.home-editorial .education-card {
+    min-width: 0;
+}
+
+body.home-editorial .education-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+body.home-editorial .education-description {
+    max-width: none;
+}
+
+/* Projects: equal card geometry; photos can crop, scientific plots elsewhere should not. */
+body.home-editorial .project-grid {
+    align-items: stretch;
+    gap: 20px;
+}
+
+body.home-editorial .project {
+    min-width: 0;
+    height: 100%;
+}
+
+body.home-editorial .project-visual {
+    display: block;
+    overflow: hidden;
+}
+
+body.home-editorial .project-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.home-editorial .project-info {
+    min-width: 0;
+}
+
+body.home-editorial .project-info p {
+    max-width: none;
+}
+
+body.home-editorial .project-footer {
+    margin-top: auto;
+}
+
+body.home-editorial .section-head p {
+    max-width: 850px;
+}
+
+/* Skills and contact: keep short labels, tags, and CTA text left-aligned. */
+body.home-editorial .skill-grid>div {
+    min-width: 0;
+}
+
+body.home-editorial .skill-grid p {
+    line-height: 1.7;
+}
+
+body.home-editorial .contact p {
+    line-height: 1.7;
+}
+
+/* Justify substantial prose only: avoid stretched buttons, tags, credits, labels. */
+@media (min-width: 761px) {
+
+    body.home-editorial main :is(#about .bodycopy p,
+        #research .bodycopy > p,
+        .education-description,
+        .project-info > p,
+        .section-head > p,
+        .disclaimer) {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
     }
 }
 
 @media (max-width: 900px) {
-    .wrap {
-        width: min(100% - 48px, 720px);
-    }
 
-    .hero-grid,
-    .split {
+    body.home-editorial #about .split,
+    body.home-editorial #research .split {
         grid-template-columns: 1fr;
-        gap: 34px;
-    }
-
-    .hero-photo {
-        width: min(100%, 650px);
-        aspect-ratio: 1.5 / 1;
-    }
-
-    .project-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .section-head {
-        align-items: start;
-    }
-
-    .navinner {
-        flex-wrap: wrap;
-        padding: 15px 0;
-    }
-
-    .nav nav {
-        flex-wrap: wrap;
-        row-gap: 10px;
+        gap: 22px;
     }
 }
 
-@media (max-width: 620px) {
-    .wrap {
-        width: calc(100% - 36px);
+@media (max-width: 760px) {
+    body.home-editorial main .section {
+        padding-block: 32px;
     }
 
-    .navinner {
-        min-height: 64px;
+    body.home-editorial main p {
+        text-align: left;
+        hyphens: none;
     }
 
-    .brand {
-        font-size: 25px;
+    body.home-editorial main .hero {
+        padding-block: 34px;
     }
 
-    .nav nav {
-        gap: 10px 14px;
+    body.home-editorial .education-image {
+        aspect-ratio: 16 / 9;
     }
+}
 
-    .hero {
-        padding-top: 52px;
-    }
 
-    .hero-grid {
-        padding-bottom: 54px;
-        gap: 30px;
-    }
+/* =========================================================
+   FINAL HOME — JUSTIFIED EDITORIAL COPY
+   Works with the existing index.html, with or without
+   the home-editorial class. Keep this at the end.
+   ========================================================= */
+@media (min-width: 761px) {
 
-    h1 {
-        font-size: clamp(38px, 9vw, 46px);
-        letter-spacing: -.045em;
+    #about .bodycopy p,
+    #about .education-description,
+    #projects .section-head p,
+    #projects .project-info>p,
+    #research .bodycopy>p,
+    #skills .disclaimer {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        overflow-wrap: break-word;
     }
+}
 
-    .lead {
-        font-size: 15px;
-        line-height: 1.8;
-    }
+@media (max-width: 760px) {
 
-    .hero-photo {
-        aspect-ratio: 4 / 3;
-        box-shadow: 8px 8px 0 #e9f0f0;
+    #about .bodycopy p,
+    #about .education-description,
+    #projects .section-head p,
+    #projects .project-info>p,
+    #research .bodycopy>p,
+    #skills .disclaimer {
+        text-align: left;
+        hyphens: none;
+        -webkit-hyphens: none;
     }
+}
 
-    .hero-foot {
-        flex-wrap: wrap;
-        font-size: 9px;
-    }
+/* ==========================================
+   ACADEMIC BACKGROUND — INTERACTIVE CARDS
+========================================== */
 
-    .section {
-        padding: 68px 0;
-    }
+.education-card .education-image-link {
+    display: block;
+    margin: 0 0 22px;
+    overflow: hidden;
+    border-radius: 3px;
+}
 
-    .academic-background {
-        margin-top: 48px;
-    }
+.education-card .education-image-link .education-image {
+    display: block;
+    width: 100%;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
 
-    .education-grid,
-    .project-grid,
-    .skill-grid {
-        grid-template-columns: 1fr;
-    }
+.education-card .education-image-link:hover .education-image {
+    transform: scale(1.035);
+}
 
-    .education-card {
-        padding: 22px;
-    }
+/* Clickable university titles */
 
-    .education-image {
-        height: 180px;
-    }
+.education-card .education-title-link {
+    display: inline;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
 
-    .project-visual {
-        aspect-ratio: 1.55 / 1;
-    }
+.education-card .education-title-link:hover {
+    color: var(--teal);
+    text-decoration: none;
+}
 
-    .section-head {
-        display: block;
-    }
+/* Links aligned at the bottom */
 
-    .section-head p {
-        margin-top: 14px;
-    }
+.education-card .education-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 24px;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+}
 
-    .contact {
-        padding: 72px 0;
-    }
+.education-card .education-links a {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
 
-    .footerinner {
-        flex-wrap: wrap;
-    }
+.education-card .education-detail-link {
+    color: var(--teal);
+}
+
+.education-card .education-official-link {
+    color: #647485;
+}
+
+.education-card .education-links a:hover {
+    text-decoration: underline;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
+    .education-card .education-image-link .education-image {
+        transition: none;
+    }
+
+    .education-card .education-image-link:hover .education-image {
+        transform: none;
+    }
+}
+
+/* ==========================================
+   HOME — COMPACT VERTICAL SPACING
+========================================== */
+
+/* Main sections */
+body.home-editorial main .section {
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+/* Academic Background */
+body.home-editorial .academic-background {
+    margin-top: 38px;
+}
+
+body.home-editorial .academic-heading {
+    margin-bottom: 22px;
+}
+
+/* Section headings */
+body.home-editorial main .section-label {
+    margin-bottom: 16px;
+}
+
+body.home-editorial main .section h2 {
+    margin-bottom: 20px;
+}
+
+/* Project cards */
+body.home-editorial .section-head {
+    margin-bottom: 26px;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+    body.home-editorial main .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    body.home-editorial .academic-background {
+        margin-top: 30px;
     }
 }

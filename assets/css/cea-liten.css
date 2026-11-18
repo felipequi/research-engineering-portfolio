@@ -1,32 +1,3 @@
-/* ================================================================
-   CEA-LITEN / RESEARCH CASE STUDY
-   Clean replacement for assets/css/cea-liten.css
-   Load AFTER assets/css/style.css. No additional overview stylesheet.
-   ================================================================ */
-
-/* 01. Design tokens & local rhythm */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 02. Project hero */
 
 
@@ -2670,5 +2641,92 @@ body:has(#overview.cea-overview) main figure figcaption {
     body:has(#overview.cea-overview) #spatial-analysis .spatial-processing img {
         height: auto;
         max-height: 245px;
+    }
+}
+
+/* ================================================================
+   CEA-LITEN — EDITORIAL ALIGNMENT / NOV 2026
+   Final, page-scoped refinements. Preserves the existing design.
+   ================================================================ */
+
+/* Justify explanatory prose on larger screens, without changing headings,
+   labels, scientific figures or short metadata. */
+@media (min-width: 761px) {
+
+    body:has(#overview.cea-overview) main :is(.cea-overview__intro,
+        .cea-overview__problem-text p,
+        .cea-overview__foundation-header p,
+        .cea-overview__objective-header p,
+        .cea-overview__scope,
+        .cea-overview__bridge p,
+        .cea-principle-card__content p,
+        .cea-objective-card p,
+        .contribution-card p,
+        .approach-intro,
+        .approach-system__details p,
+        .approach-samples__content p,
+        .approach-note,
+        .analysis-block p,
+        .imaging-panel__content p,
+        .imaging-conclusion p,
+        .spectroscopy-mechanism__content p,
+        .spectroscopy-comparison__header p,
+        .spectroscopy-conclusion p,
+        .spatial-panel__header p,
+        .spatial-panel__caption,
+        .spatial-limitations p,
+        .takeaways-outcome p,
+        .takeaways-assessment p,
+        .takeaway-roadmap p,
+        .improvement-card p) {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: none;
+    }
+}
+
+/* Introductory paragraphs share a generous editorial measure.
+   The narrower columns in split layouts keep their natural widths. */
+body:has(#overview.cea-overview) #overview .cea-overview__header--compact,
+body:has(#overview.cea-overview) #overview .cea-overview__summary,
+body:has(#overview.cea-overview) #overview .cea-overview__foundation-header,
+body:has(#overview.cea-overview) #overview .cea-overview__objective-header {
+    width: 100%;
+    max-width: 900px;
+}
+
+body:has(#overview.cea-overview) #fluorescence-imaging .analysis-intro,
+body:has(#overview.cea-overview) #fluorescence-spectroscopy .spectroscopy-intro,
+body:has(#overview.cea-overview) #spatial-analysis .spatial-intro,
+body:has(#overview.cea-overview) #image-analysis .analysis-block>p {
+    max-width: 900px;
+}
+
+/* Image geometry: consistent frames, never stretch/crop scientific content. */
+body:has(#overview.cea-overview) main figure img,
+body:has(#overview.cea-overview) .cea-principle-card__image img,
+body:has(#overview.cea-overview) .contribution-card__image img,
+body:has(#overview.cea-overview) .imaging-panel__visual img,
+body:has(#overview.cea-overview) .spectroscopy-panel__media img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Captions are deliberately left-aligned: scientific labels and conditions
+   are easier to scan without irregular spacing. */
+body:has(#overview.cea-overview) main figure figcaption,
+body:has(#overview.cea-overview) main .improvement-caption {
+    text-align: left;
+    hyphens: none;
+}
+
+/* Narrow layouts: left alignment avoids large inter-word gaps. */
+@media (max-width: 760px) {
+
+    body:has(#overview.cea-overview) main p,
+    body:has(#overview.cea-overview) main li,
+    body:has(#overview.cea-overview) main figcaption {
+        text-align: left;
+        hyphens: none;
     }
 }

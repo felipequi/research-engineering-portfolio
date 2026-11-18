@@ -1,0 +1,784 @@
+/* Institut de la Corrosion — scoped case-study styles. Load after style.css. */
+.ic-page {
+    --ic-ink: #193248;
+    --ic-copy: #4b6070;
+    --ic-muted: #687d8b;
+    --ic-accent: #187b78;
+    --ic-line: #dce6e9;
+    --ic-tint: #f5f9f9;
+    color: var(--ic-ink)
+}
+
+.ic-page main .wrap {
+    max-width: 1080px
+}
+
+.ic-page main .section {
+    padding-block: clamp(34px, 4vw, 52px)
+}
+
+.ic-page main .section h2 {
+    margin: 0 0 18px;
+    color: var(--ic-ink);
+    font-size: clamp(30px, 3.2vw, 38px);
+    line-height: 1.18;
+    letter-spacing: -.035em
+}
+
+.ic-page main p {
+    line-height: 1.68;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
+.ic-page main a {
+    color: var(--ic-accent)
+}
+
+.ic-hero {
+    padding-top: 58px;
+    padding-bottom: 62px
+}
+
+.ic-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+    gap: clamp(26px, 4vw, 46px);
+    align-items: center
+}
+
+.ic-hero__content {
+    min-width: 0
+}
+
+.ic-hero .eyebrow h3 {
+    margin: 0;
+    color: var(--ic-accent);
+    font-size: 11px;
+    letter-spacing: .12em;
+    line-height: 1.6
+}
+
+.ic-hero h1 {
+    margin: 18px 0 20px;
+    font-size: clamp(38px, 3.3vw, 48px);
+    line-height: 1.13;
+    letter-spacing: -.04em;
+    color: var(--ic-ink)
+}
+
+.ic-hero .lead {
+    max-width: 570px;
+    margin: 0 0 22px;
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ic-copy)
+}
+
+.ic-hero__credits {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--ic-muted)
+}
+
+.ic-hero__visual {
+    min-width: 0;
+    margin: 0
+}
+
+.ic-hero__illustration {
+    padding: 18px;
+    border: 1px solid var(--ic-line);
+    border-radius: 8px;
+    background: #f5f9f9
+}
+
+.ic-hero__illustration svg {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.ic-hero__visual-top,
+.ic-hero__visual-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--ic-accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em
+}
+
+.ic-hero__visual-bottom {
+    color: var(--ic-muted);
+    font-weight: 500;
+    letter-spacing: 0;
+    font-size: 11px
+}
+
+.ic-hero__visual figcaption {
+    margin-top: 10px;
+    color: var(--ic-muted);
+    font-size: 12px;
+    line-height: 1.55
+}
+
+.ic-brief {
+    padding: 25px 0 22px;
+    background: #fff;
+    border-block: 1px solid var(--ic-line)
+}
+
+.ic-brief__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px
+}
+
+.ic-brief__item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0
+}
+
+.ic-brief__label,
+.ic-kicker,
+.ic-mini-label {
+    color: var(--ic-accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase
+}
+
+.ic-brief__item strong {
+    color: var(--ic-ink);
+    font-size: 14px;
+    line-height: 1.4
+}
+
+.ic-brief__item>span:last-child {
+    color: var(--ic-muted);
+    font-size: 12px;
+    line-height: 1.5
+}
+
+.ic-brief__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 19px;
+    padding-top: 13px;
+    border-top: 1px solid #e7edef;
+    color: var(--ic-muted);
+    font-size: 12px;
+    line-height: 1.7
+}
+
+.ic-brief__footer strong {
+    color: var(--ic-ink)
+}
+
+.ic-brief__links {
+    display: flex;
+    gap: 12px 22px;
+    flex-wrap: wrap
+}
+
+.ic-brief__links a {
+    text-decoration: none;
+    font-weight: 650
+}
+
+.ic-brief__links a:hover,
+.ic-framework a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px
+}
+
+.ic-kicker {
+    margin: 0 0 13px;
+    line-height: 1.5
+}
+
+.ic-prose,
+.ic-intro {
+    max-width: 100%;
+    color: var(--ic-copy);
+    font-size: 15px
+}
+
+.ic-prose p {
+    margin: 0 0 12px
+}
+
+.ic-challenge {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 32px;
+    align-items: center;
+    margin-top: 27px;
+    padding: 24px 0 0;
+    border-top: 1px solid var(--ic-line)
+}
+
+.ic-challenge h3 {
+    margin: 9px 0 0;
+    color: var(--ic-ink);
+    font-size: 22px;
+    line-height: 1.35
+}
+
+.ic-challenge>p {
+    margin: 0;
+    color: var(--ic-copy);
+    font-size: 14.5px
+}
+
+.ic-intro {
+    margin: 0 0 25px
+}
+
+.ic-framework {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 16px
+}
+
+.ic-framework__main,
+.ic-framework__side {
+    padding: 25px 27px;
+    border: 1px solid var(--ic-line);
+    border-radius: 8px;
+    background: #fff
+}
+
+.ic-framework__main {
+    background: #eef5f4;
+    border-color: #d3e5e1
+}
+
+.ic-framework h3 {
+    margin: 12px 0;
+    color: var(--ic-ink);
+    font-size: 24px;
+    line-height: 1.3
+}
+
+.ic-framework h4 {
+    margin: 12px 0;
+    color: var(--ic-ink);
+    font-size: 19px;
+    line-height: 1.35
+}
+
+.ic-framework p {
+    margin: 0 0 14px;
+    color: var(--ic-copy);
+    font-size: 14px
+}
+
+.ic-framework a {
+    font-size: 13px;
+    font-weight: 650;
+    text-decoration: none
+}
+
+.ic-framework__note {
+    display: block;
+    margin-top: 17px;
+    padding-top: 13px;
+    border-top: 1px solid var(--ic-line);
+    color: var(--ic-muted);
+    font-size: 12px;
+    line-height: 1.55
+}
+
+.ic-funding {
+    margin: 16px 0 0;
+    color: var(--ic-muted);
+    font-size: 12px
+}
+
+.ic-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px
+}
+
+.ic-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 23px 22px;
+    background: #fff;
+    border: 1px solid var(--ic-line);
+    border-radius: 8px
+}
+
+.ic-card__number {
+    color: var(--ic-accent);
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    line-height: 1.5
+}
+
+.ic-card h3 {
+    margin: 12px 0;
+    color: var(--ic-ink);
+    font-size: 19px;
+    line-height: 1.35
+}
+
+.ic-card p {
+    margin: 0 0 18px;
+    color: var(--ic-copy);
+    font-size: 14.5px;
+    line-height: 1.65
+}
+
+.ic-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto
+}
+
+.ic-card__tags span {
+    padding: 5px 8px;
+    border: 1px solid #dce6e9;
+    border-radius: 4px;
+    background: #f5f9f9;
+    color: #526474;
+    font-size: 11px
+}
+
+.ic-process {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 27px
+}
+
+.ic-process__step {
+    flex: 1;
+    min-width: 0;
+    padding: 20px 17px;
+    background: #fff;
+    border: 1px solid var(--ic-line);
+    border-radius: 8px
+}
+
+.ic-process__step>span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--ic-accent);
+    font-size: 12px;
+    font-weight: 750
+}
+
+.ic-process__step strong {
+    display: block;
+    color: var(--ic-ink);
+    font-size: 15px
+}
+
+.ic-process__step p {
+    margin: 8px 0 0;
+    color: var(--ic-copy);
+    font-size: 13px
+}
+
+.ic-process__arrow {
+    align-self: center;
+    color: var(--ic-accent);
+    font-size: 22px
+}
+
+.ic-note {
+    margin: 18px 0 0;
+    color: var(--ic-muted);
+    font-size: 12px
+}
+
+.ic-publication {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 25px;
+    align-items: start;
+    padding: 25px;
+    border: 1px solid var(--ic-line);
+    border-radius: 8px;
+    background: #fff
+}
+
+.ic-publication__mark {
+    padding: 20px 8px;
+    border-radius: 7px;
+    background: #edf6f4;
+    color: var(--ic-accent);
+    font-size: 18px;
+    font-weight: 750;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: .05em
+}
+
+.ic-publication__mark strong {
+    font-size: 25px
+}
+
+.ic-publication h3 {
+    margin: 9px 0 12px;
+    color: var(--ic-ink);
+    font-size: 21px;
+    line-height: 1.35
+}
+
+.ic-publication p {
+    margin: 0 0 10px;
+    color: var(--ic-copy);
+    font-size: 13.5px
+}
+
+.ic-publication .ic-publication__meta {
+    color: var(--ic-accent);
+    font-weight: 600
+}
+
+.ic-publication .ic-publication__note {
+    margin: 12px 0 0;
+    color: var(--ic-muted);
+    font-size: 12px
+}
+
+@media(max-width:900px) {
+    .ic-hero__grid {
+        grid-template-columns: 1fr
+    }
+
+    .ic-hero__visual {
+        max-width: 680px
+    }
+
+    .ic-brief__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .ic-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:640px) {
+    .ic-hero {
+        padding-block: 34px
+    }
+
+    .ic-hero h1 {
+        font-size: clamp(33px, 9vw, 43px)
+    }
+
+    .ic-page main .section {
+        padding-block: 30px
+    }
+
+    .ic-page main .section h2 {
+        font-size: 30px
+    }
+
+    .ic-brief__grid,
+    .ic-framework,
+    .ic-challenge,
+    .ic-cards {
+        grid-template-columns: 1fr
+    }
+
+    .ic-brief {
+        padding: 22px 0
+    }
+
+    .ic-challenge {
+        gap: 12px
+    }
+
+    .ic-process {
+        flex-direction: column
+    }
+
+    .ic-process__arrow {
+        transform: rotate(90deg)
+    }
+
+    .ic-publication {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 19px
+    }
+
+    .ic-publication__mark {
+        max-width: 100px
+    }
+
+    .ic-framework__main,
+    .ic-framework__side {
+        padding: 20px
+    }
+
+    .ic-page main p {
+        text-align: left
+    }
+}
+
+/* Hero — Experimental laboratory photograph */
+
+.ic-hero__photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Project Brief — Subtle institutional logos */
+
+.ic-brief__identity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.ic-brief__logo {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 26px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.ic-brief__logo--institute {
+    max-width: 28px;
+}
+
+.ic-brief__logo--sweethy {
+    max-width: 60px;
+}
+
+.ic-brief__identity strong {
+    min-width: 0;
+}
+
+/* SWEETHY — AEM electrolysis schematic */
+
+.ic-aem-figure {
+    max-width: 600px;
+    margin: 42px auto 28px;
+}
+
+.ic-aem-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.ic-aem-figure figcaption {
+    margin-top: 14px;
+    color: var(--ic-muted);
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.ic-aem-figure figcaption a {
+    color: #087f83;
+    text-decoration: none;
+}
+
+.ic-aem-figure figcaption a:hover {
+    text-decoration: underline;
+}
+
+/* Research Contribution — SEM laboratory photograph */
+/* SEM photograph — compact editorial layout */
+
+.ic-sem-figure {
+    width: 100%;
+    max-width: 420px;
+    margin: 32px auto 0;
+}
+
+.ic-sem-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ic-sem-figure figcaption {
+    margin-top: 10px;
+    color: var(--ic-muted);
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Experimental Approach — Representative results */
+
+.ic-results {
+    margin-top: 48px;
+}
+
+.ic-results__heading {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.ic-results__heading h3 {
+    margin: 10px 0 12px;
+    color: #19344b;
+}
+
+.ic-results__heading p {
+    color: #607b8c;
+    line-height: 1.7;
+}
+
+.ic-results__figure {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.ic-results__figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.ic-results__figure figcaption {
+    margin-top: 12px;
+    color: var(--ic-muted);
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Experimental results — Individual material studies */
+
+.ic-results__study {
+    margin-top: 52px;
+}
+
+.ic-results__figure--wide {
+    max-width: 960px;
+}
+
+.ic-results__figure--wide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Experimental Approach — SEM material comparison */
+
+.ic-sem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.ic-sem-grid__item {
+    min-width: 0;
+    margin: 0;
+}
+
+.ic-sem-grid__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ic-sem-grid__item figcaption {
+    margin-top: 12px;
+    color: var(--ic-muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.ic-sem-grid__item figcaption strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #19344b;
+}
+
+@media (max-width: 680px) {
+    .ic-sem-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
+/* Scientific dissemination — Abstract link */
+
+.ic-abstract-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    color: #087f83;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ic-abstract-link:hover {
+    text-decoration: underline;
+}
+
+/* Editorial alignment: readable justified prose, never headings or captions */
+.ic-page main .ic-hero__credits,
+.ic-page main .ic-hero .lead,
+.ic-page main .ic-brief__footer,
+.ic-page main .ic-funding,
+.ic-page main .ic-note,
+.ic-page main .ic-publication__meta,
+.ic-page main .ic-publication__note,
+.ic-page main .ic-process__step p,
+.ic-page main figcaption {
+    text-align: left;
+    hyphens: none;
+}
+
+.ic-page main .ic-results__heading p {
+    max-width: 100%;
+    font-size: 15px;
+}
+
+/* Scientific images: preserve original data, axes, labels and scale bars */
+.ic-page main .ic-results__figure img,
+.ic-page main .ic-aem-figure img,
+.ic-page main .ic-sem-grid__item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Avoid uneven word spacing on narrow screens */
+@media (max-width: 760px) {
+    .ic-page main p {
+        text-align: left;
+        hyphens: none;
+    }
+}
